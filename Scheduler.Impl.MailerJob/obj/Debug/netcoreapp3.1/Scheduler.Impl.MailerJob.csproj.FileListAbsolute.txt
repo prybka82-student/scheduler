@@ -1,0 +1,13 @@
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MailerJob\bin\Debug\netcoreapp3.1\Scheduler.App.exe
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MailerJob\bin\Debug\netcoreapp3.1\Scheduler.Impl.MailerJob.deps.json
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MailerJob\bin\Debug\netcoreapp3.1\Scheduler.Impl.MailerJob.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MailerJob\bin\Debug\netcoreapp3.1\Scheduler.Impl.MailerJob.pdb
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MailerJob\bin\Debug\netcoreapp3.1\Scheduler.App.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MailerJob\bin\Debug\netcoreapp3.1\Scheduler.App.pdb
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MailerJob\obj\Debug\netcoreapp3.1\Scheduler.Impl.MailerJob.csprojAssemblyReference.cache
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MailerJob\obj\Debug\netcoreapp3.1\Scheduler.Impl.MailerJob.AssemblyInfoInputs.cache
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MailerJob\obj\Debug\netcoreapp3.1\Scheduler.Impl.MailerJob.AssemblyInfo.cs
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MailerJob\obj\Debug\netcoreapp3.1\Scheduler.Impl.MailerJob.csproj.CoreCompileInputs.cache
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MailerJob\obj\Debug\netcoreapp3.1\Scheduler.Impl.MailerJob.csproj.CopyComplete
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MailerJob\obj\Debug\netcoreapp3.1\Scheduler.Impl.MailerJob.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MailerJob\obj\Debug\netcoreapp3.1\Scheduler.Impl.MailerJob.pdb

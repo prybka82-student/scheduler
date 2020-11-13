@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "UYiPhb+F0mdwcReMsLd9nuOt0ddXmQ7Fcke/jsu8jPngsUvVFFwI8VqR0YP397nNd3xOWip7kuY7V3b/j9o69Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\piotr\\Desktop\\Zaawansowane techniki programowania\\Projekty\\Scheduler\\Scheduler.Impl.Scheduler\\Scheduler.Impl.Scheduler.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\piotr\\.nuget\\packages\\hangfire.core\\1.7.17\\hangfire.core.1.7.17.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\newtonsoft.json\\11.0.1\\newtonsoft.json.11.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

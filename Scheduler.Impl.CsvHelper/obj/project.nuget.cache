@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "BKXCdf+GdTLhlRJIVDNqix/3Yo+I/WFo3gRxLO1EXFwsnATcZ4AlDWvFPfHUaOBRxbEgWBDyBRFP7wHDllRCGQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\piotr\\Desktop\\Zaawansowane techniki programowania\\Projekty\\Scheduler\\Scheduler.Impl.CsvHelper\\Scheduler.Impl.CsvHelper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\piotr\\.nuget\\packages\\csvhelper\\15.0.10\\csvhelper.15.0.10.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

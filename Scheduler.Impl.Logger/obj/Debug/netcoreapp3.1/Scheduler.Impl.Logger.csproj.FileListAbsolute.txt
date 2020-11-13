@@ -1,0 +1,13 @@
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Logger\bin\Debug\netcoreapp3.1\Scheduler.App.exe
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Logger\bin\Debug\netcoreapp3.1\Scheduler.Impl.Logger.deps.json
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Logger\bin\Debug\netcoreapp3.1\Scheduler.Impl.Logger.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Logger\bin\Debug\netcoreapp3.1\Scheduler.Impl.Logger.pdb
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Logger\bin\Debug\netcoreapp3.1\Scheduler.App.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Logger\bin\Debug\netcoreapp3.1\Scheduler.App.pdb
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Logger\obj\Debug\netcoreapp3.1\Scheduler.Impl.Logger.csprojAssemblyReference.cache
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Logger\obj\Debug\netcoreapp3.1\Scheduler.Impl.Logger.AssemblyInfoInputs.cache
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Logger\obj\Debug\netcoreapp3.1\Scheduler.Impl.Logger.AssemblyInfo.cs
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Logger\obj\Debug\netcoreapp3.1\Scheduler.Impl.Logger.csproj.CoreCompileInputs.cache
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Logger\obj\Debug\netcoreapp3.1\Scheduler.Impl.Logger.csproj.CopyComplete
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Logger\obj\Debug\netcoreapp3.1\Scheduler.Impl.Logger.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Logger\obj\Debug\netcoreapp3.1\Scheduler.Impl.Logger.pdb
