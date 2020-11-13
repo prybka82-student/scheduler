@@ -2,3 +2,7 @@
 2020-11-13 20:51:44.534 +01:00 [INF] GenerateRecords: The operation lasted 00:00:08.8490310.
 2020-11-13 20:51:44.654 +01:00 [DBG] SaveToFile: Beginning to write data to path customers.csv.
 2020-11-13 20:51:48.693 +01:00 [INF] SaveToFile: The operation lasted 00:00:04.0374866.
+2020-11-13 21:12:46.357 +01:00 [DBG] GenerateRecords: Operation started.
+2020-11-13 21:12:47.737 +01:00 [INF] GenerateRecords: The operation lasted 00:00:01.2854006.
+2020-11-13 21:12:47.746 +01:00 [DBG] SaveToFile: Beginning to write data to path customers.csv.
+2020-11-13 21:12:48.360 +01:00 [INF] SaveToFile: The operation lasted 00:00:00.6122484.

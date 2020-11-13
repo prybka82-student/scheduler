@@ -32,7 +32,7 @@ namespace Scheduler.App
             IMailer mailer = new Mailer(messageTemplate, mailDeliveryDirectory);
 
             IDataGenerator<Customer> dataGenerator = new CustomerDataGenerator(123);
-            var customerData = dataGenerator.GenerateRecords(1_000_000, logger);
+            var customerData = dataGenerator.GenerateRecords(100_000, logger);
             csvHelper.SaveToFile(customerData, customerDataFilePath, logger);
 
             var mailerJobSettings = MailerJobSettingsFactory(Configuration, logger, csvHelper, mailer);
