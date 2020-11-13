@@ -9,7 +9,7 @@
       "Scheduler.Impl.DataGenerator/1.0.0": {
         "dependencies": {
           "Bogus": "31.0.3",
-          "Scheduler.App": "1.0.0"
+          "Scheduler.Core": "1.0.0"
         },
         "runtime": {
           "Scheduler.Impl.DataGenerator.dll": {}
@@ -23,9 +23,9 @@
           }
         }
       },
-      "Scheduler.App/1.0.0": {
+      "Scheduler.Core/1.0.0": {
         "runtime": {
-          "Scheduler.App.dll": {}
+          "Scheduler.Core.dll": {}
         }
       }
     }
@@ -43,7 +43,7 @@
       "path": "bogus/31.0.3",
       "hashPath": "bogus.31.0.3.nupkg.sha512"
     },
-    "Scheduler.App/1.0.0": {
+    "Scheduler.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

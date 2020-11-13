@@ -1,4 +1,5 @@
-﻿using Scheduler.App.Entities;
+﻿using Microsoft.Extensions.Configuration;
+using Scheduler.App.Entities;
 using Scheduler.App.Extensions;
 using Scheduler.App.Interfaces;
 using System;
@@ -103,12 +104,6 @@ namespace Scheduler.Impl.MailerJob
                 await SendMessageAsync(email.id, email.email, cancellationToken);
             }
         }
-
-        private async Task<IEnumerable<string>> GetBatch(string path)
-        {
-
-        }
-
-        
+                
     }
 }

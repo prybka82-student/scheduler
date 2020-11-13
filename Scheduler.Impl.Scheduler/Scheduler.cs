@@ -22,16 +22,14 @@ namespace Scheduler.Impl.Scheduler
             _jobs = new List<string>();
         }
 
-        public void AddOrUpdateJob(IJob job, string jobName, CancellationToken cancellationToken, TimeInterval interval = TimeInterval.Minute)
+        public void AddOrUpdateJob(IJob job, string jobName, CancellationToken cancellationToken, string interval)
         {
-            var cron = TimeIntervalToCron(interval);
-
             _jobs.Add(jobName);
 
             RecurringJob.AddOrUpdate(
                 recurringJobId: jobName, 
                 methodCall: () => job.DoWorkAsync(cancellationToken), 
-                cronExpression: cron);
+                cronExpression: interval);
         }
 
         public void StartJobs(CancellationToken cancellationToken)
@@ -62,29 +60,6 @@ namespace Scheduler.Impl.Scheduler
             }
 
             _jobs.Clear();
-        }
-
-        private string TimeIntervalToCron(TimeInterval interval)
-        {
-            switch (interval)
-            {
-                case TimeInterval.Never:
-                    return Cron.Never();
-                case TimeInterval.Minute:
-                    return Cron.Minutely();
-                case TimeInterval.Hour:
-                    return Cron.Hourly();
-                case TimeInterval.Day:
-                    return Cron.Daily();
-                case TimeInterval.Week:
-                    return Cron.Weekly();
-                case TimeInterval.Month:
-                    return Cron.Monthly();
-                case TimeInterval.Year:
-                    return Cron.Yearly();
-                default:
-                    return Cron.Never();
-            }
         }
 
     }

@@ -9,7 +9,7 @@
       "Scheduler.Impl.Logger/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
-          "Scheduler.App": "1.0.0",
+          "Scheduler.Core": "1.0.0",
           "Serilog": "2.10.0",
           "Serilog.Settings.AppSettings": "2.2.2",
           "Serilog.Settings.Configuration": "3.1.0",
@@ -599,9 +599,9 @@
           "System.Xml.ReaderWriter": "4.0.11"
         }
       },
-      "Scheduler.App/1.0.0": {
+      "Scheduler.Core/1.0.0": {
         "runtime": {
-          "Scheduler.App.dll": {}
+          "Scheduler.Core.dll": {}
         }
       }
     }
@@ -1011,7 +1011,7 @@
       "path": "system.xml.xdocument/4.0.11",
       "hashPath": "system.xml.xdocument.4.0.11.nupkg.sha512"
     },
-    "Scheduler.App/1.0.0": {
+    "Scheduler.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

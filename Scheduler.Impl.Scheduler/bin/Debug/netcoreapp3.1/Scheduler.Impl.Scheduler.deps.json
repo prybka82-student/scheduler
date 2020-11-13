@@ -9,7 +9,7 @@
       "Scheduler.Impl.Scheduler/1.0.0": {
         "dependencies": {
           "Hangfire.Core": "1.7.17",
-          "Scheduler.App": "1.0.0"
+          "Scheduler.Core": "1.0.0"
         },
         "runtime": {
           "Scheduler.Impl.Scheduler.dll": {}
@@ -66,9 +66,9 @@
           }
         }
       },
-      "Scheduler.App/1.0.0": {
+      "Scheduler.Core/1.0.0": {
         "runtime": {
-          "Scheduler.App.dll": {}
+          "Scheduler.Core.dll": {}
         }
       }
     }
@@ -93,7 +93,7 @@
       "path": "newtonsoft.json/11.0.1",
       "hashPath": "newtonsoft.json.11.0.1.nupkg.sha512"
     },
-    "Scheduler.App/1.0.0": {
+    "Scheduler.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

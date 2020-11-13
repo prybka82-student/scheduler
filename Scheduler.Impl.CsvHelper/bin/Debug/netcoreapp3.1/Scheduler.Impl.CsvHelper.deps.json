@@ -9,7 +9,7 @@
       "Scheduler.Impl.CsvHelper/1.0.0": {
         "dependencies": {
           "CsvHelper": "15.0.10",
-          "Scheduler.App": "1.0.0"
+          "Scheduler.Core": "1.0.0"
         },
         "runtime": {
           "Scheduler.Impl.CsvHelper.dll": {}
@@ -27,9 +27,9 @@
         }
       },
       "Microsoft.CSharp/4.5.0": {},
-      "Scheduler.App/1.0.0": {
+      "Scheduler.Core/1.0.0": {
         "runtime": {
-          "Scheduler.App.dll": {}
+          "Scheduler.Core.dll": {}
         }
       }
     }
@@ -54,7 +54,7 @@
       "path": "microsoft.csharp/4.5.0",
       "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
     },
-    "Scheduler.App/1.0.0": {
+    "Scheduler.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

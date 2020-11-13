@@ -10,7 +10,7 @@
         "dependencies": {
           "FluentEmail.Core": "2.8.0",
           "FluentEmail.Smtp": "2.8.0",
-          "Scheduler.App": "1.0.0"
+          "Scheduler.Core": "1.0.0"
         },
         "runtime": {
           "Scheduler.Impl.Mailer.dll": {}
@@ -46,9 +46,9 @@
           }
         }
       },
-      "Scheduler.App/1.0.0": {
+      "Scheduler.Core/1.0.0": {
         "runtime": {
-          "Scheduler.App.dll": {}
+          "Scheduler.Core.dll": {}
         }
       }
     }
@@ -80,7 +80,7 @@
       "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.4",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.3.1.4.nupkg.sha512"
     },
-    "Scheduler.App/1.0.0": {
+    "Scheduler.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

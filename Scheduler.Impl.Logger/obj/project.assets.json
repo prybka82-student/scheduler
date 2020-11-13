@@ -831,14 +831,14 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "Scheduler.App/1.0.0": {
+      "Scheduler.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "compile": {
-          "bin/placeholder/Scheduler.App.dll": {}
+          "bin/placeholder/Scheduler.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Scheduler.App.dll": {}
+          "bin/placeholder/Scheduler.Core.dll": {}
         }
       }
     }
@@ -3440,16 +3440,16 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "Scheduler.App/1.0.0": {
+    "Scheduler.Core/1.0.0": {
       "type": "project",
-      "path": "../Scheduler.App/Scheduler.App.csproj",
-      "msbuildProject": "../Scheduler.App/Scheduler.App.csproj"
+      "path": "../Scheduler.Core/Scheduler.Core.csproj",
+      "msbuildProject": "../Scheduler.Core/Scheduler.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.Extensions.Configuration.Abstractions >= 5.0.0",
-      "Scheduler.App >= 1.0.0",
+      "Scheduler.Core >= 1.0.0",
       "Serilog >= 2.10.0",
       "Serilog.Settings.AppSettings >= 2.2.2",
       "Serilog.Settings.Configuration >= 3.1.0",
@@ -3483,8 +3483,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\piotr\\Desktop\\Zaawansowane techniki programowania\\Projekty\\Scheduler\\Scheduler.App\\Scheduler.App.csproj": {
-              "projectPath": "C:\\Users\\piotr\\Desktop\\Zaawansowane techniki programowania\\Projekty\\Scheduler\\Scheduler.App\\Scheduler.App.csproj"
+            "C:\\Users\\piotr\\Desktop\\Zaawansowane techniki programowania\\Projekty\\Scheduler\\Scheduler.Core\\Scheduler.Core.csproj": {
+              "projectPath": "C:\\Users\\piotr\\Desktop\\Zaawansowane techniki programowania\\Projekty\\Scheduler\\Scheduler.Core\\Scheduler.Core.csproj"
             }
           }
         }

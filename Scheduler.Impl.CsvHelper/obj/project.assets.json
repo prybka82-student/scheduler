@@ -23,14 +23,14 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "Scheduler.App/1.0.0": {
+      "Scheduler.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "compile": {
-          "bin/placeholder/Scheduler.App.dll": {}
+          "bin/placeholder/Scheduler.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Scheduler.App.dll": {}
+          "bin/placeholder/Scheduler.Core.dll": {}
         }
       }
     }
@@ -124,16 +124,16 @@
         "version.txt"
       ]
     },
-    "Scheduler.App/1.0.0": {
+    "Scheduler.Core/1.0.0": {
       "type": "project",
-      "path": "../Scheduler.App/Scheduler.App.csproj",
-      "msbuildProject": "../Scheduler.App/Scheduler.App.csproj"
+      "path": "../Scheduler.Core/Scheduler.Core.csproj",
+      "msbuildProject": "../Scheduler.Core/Scheduler.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "CsvHelper >= 15.0.10",
-      "Scheduler.App >= 1.0.0"
+      "Scheduler.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -162,8 +162,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\piotr\\Desktop\\Zaawansowane techniki programowania\\Projekty\\Scheduler\\Scheduler.App\\Scheduler.App.csproj": {
-              "projectPath": "C:\\Users\\piotr\\Desktop\\Zaawansowane techniki programowania\\Projekty\\Scheduler\\Scheduler.App\\Scheduler.App.csproj"
+            "C:\\Users\\piotr\\Desktop\\Zaawansowane techniki programowania\\Projekty\\Scheduler\\Scheduler.Core\\Scheduler.Core.csproj": {
+              "projectPath": "C:\\Users\\piotr\\Desktop\\Zaawansowane techniki programowania\\Projekty\\Scheduler\\Scheduler.Core\\Scheduler.Core.csproj"
             }
           }
         }

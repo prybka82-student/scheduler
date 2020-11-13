@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "lfVH2So3SaHJlrncPgRCekUhlVlPAGu4TmcdY3qr8JGtJ3PCPX5OPQrbUsWjkvyNxyI96zMLd26iBYdpwI8kQg==",
+  "dgSpecHash": "KpGAls1rGf9TOkCsmbub77swf1tyfWg5x9lof0b0dDIrPIi/C8QGM2X/twupmCAu5hLEtBPQF67FBgpXarpW6A==",
   "success": true,
   "projectFilePath": "C:\\Users\\piotr\\Desktop\\Zaawansowane techniki programowania\\Projekty\\Scheduler\\Scheduler.Impl.MailerJob\\Scheduler.Impl.MailerJob.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\piotr\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

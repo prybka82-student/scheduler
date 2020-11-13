@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Scheduler.App\Scheduler.App.csproj" />
+    <ProjectReference Include="..\Scheduler.Core\Scheduler.Core.csproj" />
   </ItemGroup>
 
 </Project>

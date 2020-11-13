@@ -5,4 +5,25 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Scheduler.Core\Scheduler.Core.csproj" />
+    <ProjectReference Include="..\Scheduler.Impl.CsvHelper\Scheduler.Impl.CsvHelper.csproj" />
+    <ProjectReference Include="..\Scheduler.Impl.DataGenerator\Scheduler.Impl.DataGenerator.csproj" />
+    <ProjectReference Include="..\Scheduler.Impl.Logger\Scheduler.Impl.Logger.csproj" />
+    <ProjectReference Include="..\Scheduler.Impl.MailerJob\Scheduler.Impl.MailerJob.csproj" />
+    <ProjectReference Include="..\Scheduler.Impl.Mailer\Scheduler.Impl.Mailer.csproj" />
+    <ProjectReference Include="..\Scheduler.Impl.Scheduler\Scheduler.Impl.Scheduler.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
