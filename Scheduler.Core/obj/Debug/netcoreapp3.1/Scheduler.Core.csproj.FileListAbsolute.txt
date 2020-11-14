@@ -6,3 +6,4 @@ C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Sc
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Core\obj\Debug\netcoreapp3.1\Scheduler.Core.csproj.CoreCompileInputs.cache
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Core\obj\Debug\netcoreapp3.1\Scheduler.Core.dll
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Core\obj\Debug\netcoreapp3.1\Scheduler.Core.pdb
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Core\obj\Debug\netcoreapp3.1\Scheduler.Core.csprojAssemblyReference.cache

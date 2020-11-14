@@ -9,6 +9,7 @@ using System.IO;
 using Scheduler.App.Extensions;
 using System.ComponentModel.Design;
 using System.Threading;
+using System.Linq;
 
 namespace Scheduler.Impl.Mailer
 {
@@ -23,7 +24,7 @@ namespace Scheduler.Impl.Mailer
         public Mailer(string template, string deliveryDirectory)
         {
             _template = template ?? "<h1>Dear @Model.Title @Model.Surname</h1><p>We would like to offer you a discount of @Model.Discount.</p><p>Please, feel free to use it at your convenience.</p><p>Yours Best Vendor</p>";
-            _deliveryDirectory = deliveryDirectory ?? "/emails";
+            _deliveryDirectory = deliveryDirectory ?? "..\\emails";
 
             CreateDeliveryDirectory(_deliveryDirectory);
 
@@ -35,9 +36,9 @@ namespace Scheduler.Impl.Mailer
             var emailToSend = MailFactory(email, logger);            
 
             if (emailToSend.Send(cancellationToken).Successful)
-                return new ActionResult<App.Entities.Email>(ResultType.OK, email.ToSingleItemSequence());
+                return new ActionResult<App.Entities.Email>(ResultType.OK, email.ToSingleItemSequence().ToList());
             else
-                return new ActionResult<App.Entities.Email>(ResultType.error, email.ToSingleItemSequence());
+                return new ActionResult<App.Entities.Email>(ResultType.error, email.ToSingleItemSequence().ToList());
         }
 
         public async Task<ActionResult<App.Entities.Email>> SendAsync(App.Entities.Email email, CancellationToken cancellationToken, ILogger logger)
@@ -45,9 +46,9 @@ namespace Scheduler.Impl.Mailer
             var emailToSend = MailFactory(email, logger);
 
             if ((await emailToSend.SendAsync(cancellationToken)).Successful)
-                return new ActionResult<App.Entities.Email>(ResultType.OK, email.ToSingleItemSequence());
+                return new ActionResult<App.Entities.Email>(ResultType.OK, email.ToSingleItemSequence().ToList());
             else
-                return new ActionResult<App.Entities.Email>(ResultType.error, email.ToSingleItemSequence());
+                return new ActionResult<App.Entities.Email>(ResultType.error, email.ToSingleItemSequence().ToList());
         }
 
         private object EmailToModel(Scheduler.App.Entities.Email email)

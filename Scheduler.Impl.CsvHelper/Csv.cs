@@ -22,8 +22,8 @@ namespace Scheduler.Impl.CsvHelper
             {
                 logger?.Debug($"Begininng to load data from {path}");
 
-                if (CheckIfFileExists(path)) throw new FileNotFoundException($"File {path} does not exist");
-                
+                if (CheckIfFileExists(path).No()) throw new FileNotFoundException($"File {path} does not exist");
+
                 var stopwatch = Stopwatch.StartNew();
 
                 using var reader = new StreamReader(path);
@@ -38,7 +38,9 @@ namespace Scheduler.Impl.CsvHelper
 
                 logger?.Debug($"Successfully loaded {result.Count()} records from {path}");
 
-                return new ActionResult<T>(ResultType.OK, result);
+                var res = new ActionResult<T>(ResultType.OK, result.ToList());
+
+                return res;
             }
             catch (FileNotFoundException e)
             {
@@ -53,7 +55,11 @@ namespace Scheduler.Impl.CsvHelper
         }
 
         public async Task<ActionResult<T>> LoadFromFileAsync<T>(string path, int skip = 0, int take = 0, ILogger logger = null)
-            => await Task.FromResult(LoadFromFile<T>(path, skip, take, logger));
+        {
+            var res = await Task.FromResult(LoadFromFile<T>(path, skip, take, logger));
+
+            return res;
+        }
 
         public ActionResult<T> SaveToFile<T>(IEnumerable<T> data, string path, ILogger logger = null)
         {
@@ -72,7 +78,7 @@ namespace Scheduler.Impl.CsvHelper
 
                 logger?.Time(stopwatch.Elapsed);
 
-                return new ActionResult<T>(ResultType.OK, data);
+                return new ActionResult<T>(ResultType.OK, data.ToList());
             }
             catch (DirectoryNotFoundException e)
             {

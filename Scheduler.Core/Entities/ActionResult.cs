@@ -10,11 +10,11 @@ namespace Scheduler.App.Entities
     public class ActionResult<T>
     {
         public ResultType Result { get; set; }
-        public IEnumerable<T> Data { get; set; }
+        public ICollection<T> Data { get; set; }
 
-        public ActionResult(ResultType result, IEnumerable<T> data = null)
+        public ActionResult(ResultType result, ICollection<T> data = null)
         {
-            Data = data ?? Enumerable.Empty<T>();
+            Data = data;
             Result = result;
         }
     }

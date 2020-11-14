@@ -1,11 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "bdoGIkSsMt2T4FaaOZvORkRK5HhzmtRtxkH8g7Kln0x7aujc1MThikWxloD1Ye5hupCz8mQvAPod6fTUuEYwog==",
+  "dgSpecHash": "ruPM9XbemXiwAZqSvJdqPWvUSklVcOyReFpxNZY7arBoUtfj+15rGR1DVD/K4B4imdVLMS2q6o/Yf6AybZwYug==",
   "success": true,
   "projectFilePath": "C:\\Users\\piotr\\Desktop\\Zaawansowane techniki programowania\\Projekty\\Scheduler\\Scheduler.Impl.Scheduler\\Scheduler.Impl.Scheduler.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\piotr\\.nuget\\packages\\hangfire.core\\1.7.17\\hangfire.core.1.7.17.nupkg.sha512",
-    "C:\\Users\\piotr\\.nuget\\packages\\newtonsoft.json\\11.0.1\\newtonsoft.json.11.0.1.nupkg.sha512"
+    "C:\\Users\\piotr\\.nuget\\packages\\hangfire.memorystorage\\1.7.0\\hangfire.memorystorage.1.7.0.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\hangfire.sqlserver\\1.7.17\\hangfire.sqlserver.1.7.17.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\microsoft.win32.registry\\4.4.0\\microsoft.win32.registry.4.4.0.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\newtonsoft.json\\11.0.1\\newtonsoft.json.11.0.1.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\system.data.sqlclient\\4.4.0\\system.data.sqlclient.4.4.0.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\system.security.accesscontrol\\4.4.0\\system.security.accesscontrol.4.4.0.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\system.security.principal.windows\\4.4.0\\system.security.principal.windows.4.4.0.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512"
   ],
   "logs": []
 }
