@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "KpGAls1rGf9TOkCsmbub77swf1tyfWg5x9lof0b0dDIrPIi/C8QGM2X/twupmCAu5hLEtBPQF67FBgpXarpW6A==",
+  "dgSpecHash": "MB5nmLhIzcNvOIbIfXQprTa/1UUURYXxLMz02XcS6U/fKWfmt0AXDevW6lKLyYFMEmXnygFx9OlKGPLXvdQfOA==",
   "success": true,
   "projectFilePath": "C:\\Users\\piotr\\Desktop\\Zaawansowane techniki programowania\\Projekty\\Scheduler\\Scheduler.Impl.MailerJob\\Scheduler.Impl.MailerJob.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\piotr\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
-    "C:\\Users\\piotr\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+    "C:\\Users\\piotr\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\system.linq.async\\5.0.0\\system.linq.async.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

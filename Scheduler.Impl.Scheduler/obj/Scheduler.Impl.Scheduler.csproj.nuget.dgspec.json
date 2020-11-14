@@ -93,20 +93,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "dependencies": {
-            "Hangfire.Core": {
-              "target": "Package",
-              "version": "[1.7.17, )"
-            },
-            "Hangfire.MemoryStorage": {
-              "target": "Package",
-              "version": "[1.7.0, )"
-            },
-            "Hangfire.SqlServer": {
-              "target": "Package",
-              "version": "[1.7.17, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

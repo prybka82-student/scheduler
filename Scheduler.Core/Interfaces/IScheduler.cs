@@ -9,13 +9,9 @@ namespace Scheduler.App.Interfaces
 {
     public interface IScheduler
     {
-        void AddOrUpdateJob(IJob job, string jobName, CancellationToken cancellationToken, string interval);
+        void AddJob(IJob job);
 
-        void RemoveJob(string jobName);
-
-        void StartJobs(CancellationToken cancellationToken);
-
-        void StopAndRemoveAllJobs();
+        Task StartAsync();
                 
     }
 }

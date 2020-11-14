@@ -1,8 +1,7 @@
-﻿using Hangfire;
-using Hangfire.MemoryStorage;
-using Scheduler.App.Entities;
+﻿using Scheduler.App.Entities;
 using Scheduler.App.Extensions;
 using Scheduler.App.Interfaces;
+using Scheduler.Core.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -15,78 +14,45 @@ namespace Scheduler.Impl.Scheduler
     public class Scheduler : IScheduler
     {
         ILogger _logger;
-        List<string> _jobs;
-        BackgroundJobServerOptions _serverOptions;
+        IJob _job;
+        CancellationTokenSource _cts;
 
-        public Scheduler(ILogger logger, string sqlConnectionString)
+        public Scheduler(ILogger logger) => _logger = logger;
+
+        public void AddJob(IJob job)
         {
-            _logger = logger;
-            _jobs = new List<string>();
-
-            _serverOptions = new BackgroundJobServerOptions
-            {
-                WorkerCount = Environment.ProcessorCount * 5
-            };
-
-            logger.Debug("Configuring Hangfire...");
-
-            GlobalConfiguration
-                .Configuration
-                .UseSqlServerStorage(sqlConnectionString);
-                        
+            _job = job;
+            _cts = new CancellationTokenSource();
+            _job.CancellationToken = _cts.Token;
         }
 
-        public void AddOrUpdateJob(IJob job, string jobName, CancellationToken cancellationToken, string interval)
+        public async Task StartAsync()
         {
-            _logger.Debug($"Adding job '{jobName}'");
+            //https://medium.com/@NitinManju/a-simple-scheduled-task-using-c-and-net-c9d3230769ea
 
-            _jobs.Add(jobName);
+            if (_job == null) return;
+            
+            Console.WriteLine("Press Ctrl + C to stop");
+            Console.CancelKeyPress += CancelKeyPress;
 
-            //var id = BackgroundJob.Enqueue(() => job.DoWorkAsync(cancellationToken));
-            //var id = BackgroundJob.Schedule(() => job.DoWorkAsync(cancellationToken), TimeSpan.FromSeconds(0));
-
-            //_logger.Debug($"Fire and forget background job id: {id}");
-
-            RecurringJob.AddOrUpdate(
-                recurringJobId: jobName,
-                methodCall: () => job.DoWorkAsync(cancellationToken),
-                cronExpression: interval);
-        }
-
-        public void StartJobs(CancellationToken cancellationToken)
-        {
-            //using (new BackgroundJobServer(_serverOptions));            
-
-            foreach (var jobName in _jobs)
+            await Task.Run(async () =>
             {
-                if (cancellationToken.IsCancellationRequested.No())
+                while (_job.CancellationToken.IsCancellationRequested.No())
                 {
-                    _logger.Debug($"Triggering job '{jobName}'");
-                    RecurringJob.Trigger(jobName);
+                    await _job.DoWorkAsync();
+
+                    _logger.Debug($"\n{new string('=', 20)}\nJob done\n{new string('=', 20)}\n\n\n");
+                    
+                    await Task.Delay(_job.CronInterval.ToTimeSpan());
                 }
-                else
-                {
-                    var e = new TaskCanceledException();
-                    _logger.Exception(e, $"Job called {jobName} was canceled");
-                    throw e;
-                }
-            }
+            }, _job.CancellationToken);
+
         }
 
-        public void RemoveJob(string jobName)
+        private void CancelKeyPress(object sender, ConsoleCancelEventArgs e)
         {
-            RecurringJob.RemoveIfExists(jobName);
+            if (e.SpecialKey == ConsoleSpecialKey.ControlC)
+                _cts.Cancel();
         }
-
-        public void StopAndRemoveAllJobs()
-        {
-            foreach (var jobName in _jobs)
-            {
-                RecurringJob.RemoveIfExists(jobName);
-            }
-
-            _jobs.Clear();
-        }
-
     }
 }

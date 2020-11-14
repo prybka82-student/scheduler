@@ -9,6 +9,6 @@ namespace Scheduler.App.Interfaces
 {
     public interface IMailer
     {           
-        Task<ActionResult<Email>> SendAsync(Email email, CancellationToken cancellation, ILogger logger);
+        Task SendAsync(Email email, CancellationToken cancellation, ILogger logger);
     }
 }

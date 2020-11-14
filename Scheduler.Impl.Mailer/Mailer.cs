@@ -15,11 +15,8 @@ namespace Scheduler.Impl.Mailer
 {
     public class Mailer : IMailer
     {
-        string _template = "";
-
-        string _deliveryDirectory = "";
-
-        object _model = new { Title = "Sir/Madam", Surname = "Smith", Discount = 0.4M };
+        string _template;
+        string _deliveryDirectory;
 
         public Mailer(string template, string deliveryDirectory)
         {
@@ -31,24 +28,21 @@ namespace Scheduler.Impl.Mailer
             FluentEmail.Core.Email.DefaultSender = SmtpSenderFactory(_deliveryDirectory);
         }
 
-        public ActionResult<App.Entities.Email> Send(App.Entities.Email email, CancellationToken cancellationToken, ILogger logger)
+        public async Task SendAsync(App.Entities.Email email, CancellationToken token, ILogger logger)
         {
-            var emailToSend = MailFactory(email, logger);            
+            try
+            {
+                logger?.Debug($"Sending email...");
 
-            if (emailToSend.Send(cancellationToken).Successful)
-                return new ActionResult<App.Entities.Email>(ResultType.OK, email.ToSingleItemSequence().ToList());
-            else
-                return new ActionResult<App.Entities.Email>(ResultType.error, email.ToSingleItemSequence().ToList());
-        }
+                var emailToSend = MailFactory(email, logger);
 
-        public async Task<ActionResult<App.Entities.Email>> SendAsync(App.Entities.Email email, CancellationToken cancellationToken, ILogger logger)
-        {
-            var emailToSend = MailFactory(email, logger);
-
-            if ((await emailToSend.SendAsync(cancellationToken)).Successful)
-                return new ActionResult<App.Entities.Email>(ResultType.OK, email.ToSingleItemSequence().ToList());
-            else
-                return new ActionResult<App.Entities.Email>(ResultType.error, email.ToSingleItemSequence().ToList());
+                await emailToSend.SendAsync(token);
+            }
+            catch (Exception e)
+            {
+                logger?.Exception(e);
+                throw;
+            }
         }
 
         private object EmailToModel(Scheduler.App.Entities.Email email)
@@ -80,7 +74,7 @@ namespace Scheduler.Impl.Mailer
         {
             try
             {
-                logger.Debug("Creating new e-mail...");
+                logger?.Debug("Creating new e-mail...");
 
                 return FluentEmail.Core.Email
                     .From(emailAddress: email.From.Email, name: $"{email.From.Name} {email.From.Surname}")
@@ -90,10 +84,9 @@ namespace Scheduler.Impl.Mailer
             }
             catch (Exception e)
             {
-                logger.Exception(e);
+                logger?.Exception(e);
                 throw e;
             }            
-        }
-
+        }        
     }
 }

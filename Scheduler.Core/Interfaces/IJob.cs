@@ -8,6 +8,12 @@ namespace Scheduler.App.Interfaces
 {
     public interface IJob
     {
-        Task DoWorkAsync(CancellationToken cancellationToken);
+        string Name { get; }
+
+        string CronInterval { get; }
+
+        CancellationToken CancellationToken { get; set; }
+
+        Task DoWorkAsync();
     }
 }

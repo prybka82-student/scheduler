@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "OAH+DUdBQfvthgzasFNWJxnTwgbkuENvz3Ycd8LsSpSn237gIGXrDur3BUuiOXHWES+ROXyBDdXTF8/F/V9rfA==",
+  "dgSpecHash": "yFbllDoKI6rNnJwuakSS7Udxgpesqc+rPb43lICbNWPbZgY2RHwezSZ/6gltEXDt1Xn+eYvOVXsI5Aobmad5dw==",
   "success": true,
   "projectFilePath": "C:\\Users\\piotr\\Desktop\\Zaawansowane techniki programowania\\Projekty\\Scheduler\\Scheduler.Impl.CsvHelper\\Scheduler.Impl.CsvHelper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\piotr\\.nuget\\packages\\csvhelper\\15.0.10\\csvhelper.15.0.10.nupkg.sha512",
-    "C:\\Users\\piotr\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512"
+    "C:\\Users\\piotr\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\system.linq.async\\5.0.0\\system.linq.async.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

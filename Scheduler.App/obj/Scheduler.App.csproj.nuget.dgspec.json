@@ -181,6 +181,10 @@
             "CsvHelper": {
               "target": "Package",
               "version": "[15.0.10, )"
+            },
+            "System.Linq.Async": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -387,6 +391,10 @@
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "System.Linq.Async": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -511,20 +519,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "dependencies": {
-            "Hangfire.Core": {
-              "target": "Package",
-              "version": "[1.7.17, )"
-            },
-            "Hangfire.MemoryStorage": {
-              "target": "Package",
-              "version": "[1.7.0, )"
-            },
-            "Hangfire.SqlServer": {
-              "target": "Package",
-              "version": "[1.7.17, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

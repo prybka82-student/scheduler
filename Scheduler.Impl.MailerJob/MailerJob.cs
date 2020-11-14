@@ -4,6 +4,7 @@ using Scheduler.App.Extensions;
 using Scheduler.App.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.Loader;
 using System.Threading;
 using System.Threading.Tasks;
@@ -20,13 +21,23 @@ namespace Scheduler.Impl.MailerJob
         private int _batchSize;
         private Addressee _companyData;
         private string _subjectTemplate;
-        private string _subjectTemplateDiscountPlaceholder = "#";
+        private readonly string _subjectTemplateDiscountPlaceholder = "#";
 
-        public MailerJob(MailerJobSettings settings)
+        public string Name { get; }
+
+        public CancellationToken CancellationToken { get; set; }
+
+        public string CronInterval { get; }
+
+        public MailerJob(string name, string cronInterval, CancellationToken token, MailerJobSettings settings)
         {
-            _customerDataFilePath = settings.CustomerDataFilePath;
-            _batchSize = settings.BatchSize;
             _sentMessageIds = new List<int>();
+            
+            CronInterval = cronInterval;
+            CancellationToken = token;
+
+            _customerDataFilePath = settings.CustomerDataFilePath;
+            _batchSize = settings.BatchSize;            
             _mailer = settings.Mailer;
             _logger = settings.Logger;
             _csvHelper = settings.CsvHelper;
@@ -35,75 +46,88 @@ namespace Scheduler.Impl.MailerJob
             _subjectTemplate = settings.SubjectTemplate;
         }
 
-        public async Task DoWorkAsync(CancellationToken cancellationToken)
+        public async Task DoWorkAsync()
         {
-            var loadingFileResult = await _csvHelper.LoadFromFileAsync<Customer>(_customerDataFilePath, _sentMessageIds.Count, _batchSize);
-            
-            if (loadingFileResult.Result != ResultType.OK)
+            try
             {
-                _logger.Warning($"Batch of client data from {_sentMessageIds.Count} to {_sentMessageIds.Count + _batchSize} was not retrieved");
-                return;
+                var customerDataBatch = await _csvHelper
+                    .LoadFromFileAsync<Customer>(_customerDataFilePath, _sentMessageIds.Count, _batchSize);
+
+                if (customerDataBatch == null) throw new ArgumentNullException();
+
+                var emailsBatch = CustomerDataToEmail(customerDataBatch);
+
+                if (emailsBatch == null) throw new NullReferenceException();
+
+                await SendBatchAsync(emailsBatch, CancellationToken);
             }
-
-            var customerDataBatch = loadingFileResult.Data;
-
-            if (customerDataBatch.IsNullOrEmpty())
+            catch (ArgumentNullException e)
             {
-                _logger.Warning($"There are no client data records to process");
-                return;
+                _logger.Exception(e, "There is no customer data to process");
+                throw e;
             }
-
-            var emailsBatch = CustomerDataToEmail(customerDataBatch);
-
-            if (emailsBatch.IsNullOrEmpty())
+            catch (NullReferenceException e)
             {
-                _logger.Warning($"There are no emails for sending");
-                return;
+                _logger.Exception(e, "There are no emails to send");
+                throw e;
             }
-
-            await SendBatchAsync(emailsBatch, cancellationToken);            
+            catch (Exception e)
+            {
+                _logger.Exception(e);
+                throw e;
+            }            
         }
 
         private IEnumerable<(int id, Email email)> CustomerDataToEmail(IEnumerable<Customer> customerDataBatch)
         {
-            var counter = _sentMessageIds.Count;
+            var counter = _sentMessageIds
+                .Count;
 
             foreach (var item in customerDataBatch)
             {
+                var discount = item
+                    .Discount
+                    .ToString();
+
+                var addressee = new Addressee
+                {
+                    Email = item.Email,
+                    Name = item.Name,
+                    Surname = item.Surname,
+                    Title = item.Title
+                };
+
                 var mail = new Email
                 {
-                    Content = item.Discount.ToString(),
-                    Subject = _subjectTemplate.Replace(_subjectTemplateDiscountPlaceholder, item.Discount.ToString()),
+                    Content = discount,
+                    Subject = _subjectTemplate
+                        .Replace(_subjectTemplateDiscountPlaceholder, discount),
                     From = _companyData,
-                    To = new Addressee
-                    {
-                        Email = item.Email,
-                        Name = item.Name,
-                        Surname = item.Surname,
-                        Title = item.Title
-                    }
+                    To = addressee
                 };
 
                 yield return (++counter, mail);
             }
         }
 
-        private async Task SendMessageAsync(int emailId, Email email, CancellationToken cancellationToken)
+        private async Task SendMessageAsync(int emailId, Email email, CancellationToken token)
         {
-            if (_sentMessageIds.Contains(emailId).No())
-            {
-                _sentMessageIds.Add(emailId);
-                await _mailer.SendAsync(email, cancellationToken, _logger);
-            }
+            if (_sentMessageIds.Contains(emailId))
+                return;
+
+            _sentMessageIds
+                .Add(emailId);
+            
+            await _mailer
+                .SendAsync(email, token, _logger);
         }
 
-        private async Task SendBatchAsync(IEnumerable<(int id, Email email)> emails, CancellationToken cancellationToken)
+        private async Task SendBatchAsync(IEnumerable<(int id, Email email)> emails, CancellationToken token)
         {
             foreach (var email in emails)
             {
-                await SendMessageAsync(email.id, email.email, cancellationToken);
+                await SendMessageAsync(email.id, email.email, token);
             }
         }
-                
     }
 }

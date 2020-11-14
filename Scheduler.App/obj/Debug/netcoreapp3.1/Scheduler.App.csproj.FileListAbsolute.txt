@@ -9,8 +9,6 @@ C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Sc
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\CsvHelper.dll
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\FluentEmail.Core.dll
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\FluentEmail.Smtp.dll
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\Hangfire.Core.dll
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\Hangfire.MemoryStorage.dll
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.dll
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Abstractions.dll
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Core.dll
@@ -72,16 +70,6 @@ C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Sc
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\ca\Hangfire.Core.resources.dll
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\es\Hangfire.Core.resources.dll
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\fa\Hangfire.Core.resources.dll
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\fr\Hangfire.Core.resources.dll
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\nl\Hangfire.Core.resources.dll
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\pt-BR\Hangfire.Core.resources.dll
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\pt-PT\Hangfire.Core.resources.dll
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\pt\Hangfire.Core.resources.dll
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\zh-TW\Hangfire.Core.resources.dll
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\zh\Hangfire.Core.resources.dll
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\runtimes\win-x64\nativeassets\netcoreapp2.2\aspnetcorev2_inprocess.dll
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\runtimes\win-x86\nativeassets\netcoreapp2.2\aspnetcorev2_inprocess.dll
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
@@ -107,10 +95,4 @@ C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Sc
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\obj\Debug\netcoreapp3.1\Scheduler.App.dll
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\obj\Debug\netcoreapp3.1\Scheduler.App.pdb
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\obj\Debug\netcoreapp3.1\Scheduler.App.genruntimeconfig.cache
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\Hangfire.SqlServer.dll
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\System.Linq.Async.dll

@@ -9,36 +9,38 @@ using Scheduler.Impl.Mailer;
 using System.IO;
 using System;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace Scheduler.App
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Do() => Console.WriteLine("It's alive!");
+
+        static async Task Main(string[] args)
         {
             var customerDataFilePath = Startup.Configuration.GetValue<string>(global.CustomerDataFile);
             var mailDeliveryDirectory = FilePathFactory(Startup.Configuration.GetValue<string>(global.MailDeliveryDirectory));
             var messageSendTimeInterval = Startup.Configuration.GetValue<string>(global.MessageSendTimeInterval);
             var messageTemplate = Startup.Configuration.GetValue<string>(global.MessageTemplate);
-            var sqlConnectionString = Startup.Configuration.GetValue<string>(global.SqlConnectionString);
 
             ILogger logger = new Logger(Startup.Configuration);
             ICsvHelper csvHelper = new Csv();
-            IScheduler scheduler = new Scheduler.Impl.Scheduler.Scheduler(logger, sqlConnectionString);
+            IScheduler scheduler = new Scheduler.Impl.Scheduler.Scheduler(logger);
             IMailer mailer = new Mailer(messageTemplate, mailDeliveryDirectory);
 
-            //IDataGenerator<Customer> dataGenerator = new CustomerDataGenerator(123);
-            //var customerData = dataGenerator.GenerateRecords(100_000, logger);
-            //csvHelper.SaveToFile(customerData, customerDataFilePath, logger);
+            ////IDataGenerator<Customer> dataGenerator = new CustomerDataGenerator(123);
+            ////var customerData = dataGenerator.GenerateRecords(100_000, logger);
+            ////csvHelper.SaveToFile(customerData, customerDataFilePath, logger);
 
             var mailerJobSettings = MailerJobSettingsFactory(Startup.Configuration, logger, csvHelper, mailer);
-            IJob job = new MailerJob(mailerJobSettings);
+            IJob job = new MailerJob(nameof(MailerJob), messageSendTimeInterval, new CancellationToken(), mailerJobSettings);
 
-            var task = job.DoWorkAsync(new System.Threading.CancellationToken());
+            scheduler.AddJob(job);
 
-            scheduler.AddOrUpdateJob(job, "mailerJob", new System.Threading.CancellationToken(), messageSendTimeInterval);
+            await scheduler.StartAsync();
 
-            scheduler.StartJobs(new System.Threading.CancellationToken());
+
 
         }
 
