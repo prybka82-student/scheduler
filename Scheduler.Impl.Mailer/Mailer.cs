@@ -10,6 +10,9 @@ using Scheduler.App.Extensions;
 using System.ComponentModel.Design;
 using System.Threading;
 using System.Linq;
+using FluentEmail.Razor;
+using System.Reflection;
+using Scheduler.Core.Extensions;
 
 namespace Scheduler.Impl.Mailer
 {
@@ -17,15 +20,19 @@ namespace Scheduler.Impl.Mailer
     {
         string _template;
         string _deliveryDirectory;
+        string _razorTemplateFileName;
 
-        public Mailer(string template, string deliveryDirectory)
+        public Mailer(string template, string razorTemplateFileName, string deliveryDirectory)
         {
             _template = template ?? "<h1>Dear @Model.Title @Model.Surname</h1><p>We would like to offer you a discount of @Model.Discount.</p><p>Please, feel free to use it at your convenience.</p><p>Yours Best Vendor</p>";
             _deliveryDirectory = deliveryDirectory ?? "..\\emails";
+            _razorTemplateFileName = razorTemplateFileName;
 
             CreateDeliveryDirectory(_deliveryDirectory);
 
             FluentEmail.Core.Email.DefaultSender = SmtpSenderFactory(_deliveryDirectory);
+
+            FluentEmail.Core.Email.DefaultRenderer = new RazorRenderer();
         }
 
         public async Task SendAsync(App.Entities.Email email, CancellationToken token, ILogger logger)
@@ -43,16 +50,6 @@ namespace Scheduler.Impl.Mailer
                 logger?.Exception(e);
                 throw;
             }
-        }
-
-        private object EmailToModel(Scheduler.App.Entities.Email email)
-        {
-            return new
-            {
-                Title = email.To.Title,
-                Surname = email.To.Surname,
-                Discount = email.Content
-            };
         }
 
         private SmtpSender SmtpSenderFactory(string deliveryDirectory, string host = "localhost", bool enableSSl = false)
@@ -80,7 +77,7 @@ namespace Scheduler.Impl.Mailer
                     .From(emailAddress: email.From.Email, name: $"{email.From.Name} {email.From.Surname}")
                     .To(emailAddress: email.To.Email, name: $"{email.To.Name} {email.To.Surname}")
                     .Subject(email.Subject)
-                    .UsingTemplate(_template, EmailToModel(email));
+                    .UsingTemplateFromFile(_razorTemplateFileName, new { Title = email.To.Title, Surname = email.To.Surname, Discount = email.Content });
             }
             catch (Exception e)
             {

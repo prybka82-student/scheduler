@@ -4,9 +4,9 @@ C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Sc
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Mailer\obj\Debug\netcoreapp3.1\Scheduler.Impl.Mailer.csprojAssemblyReference.cache
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Mailer\obj\Debug\netcoreapp3.1\Scheduler.Impl.Mailer.AssemblyInfoInputs.cache
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Mailer\obj\Debug\netcoreapp3.1\Scheduler.Impl.Mailer.AssemblyInfo.cs
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Mailer\obj\Debug\netcoreapp3.1\Scheduler.Impl.Mailer.csproj.CoreCompileInputs.cache
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Mailer\obj\Debug\netcoreapp3.1\Scheduler.Impl.Mailer.csproj.CopyComplete
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Mailer\obj\Debug\netcoreapp3.1\Scheduler.Impl.Mailer.dll
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Mailer\obj\Debug\netcoreapp3.1\Scheduler.Impl.Mailer.pdb
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Mailer\bin\Debug\netcoreapp3.1\Scheduler.Core.dll
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Mailer\bin\Debug\netcoreapp3.1\Scheduler.Core.pdb
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Mailer\obj\Debug\netcoreapp3.1\Scheduler.Impl.Mailer.csproj.CoreCompileInputs.cache

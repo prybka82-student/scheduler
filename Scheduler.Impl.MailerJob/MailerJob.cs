@@ -2,6 +2,7 @@
 using Scheduler.App.Entities;
 using Scheduler.App.Extensions;
 using Scheduler.App.Interfaces;
+using Scheduler.Core.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -87,7 +88,8 @@ namespace Scheduler.Impl.MailerJob
             {
                 var discount = item
                     .Discount
-                    .ToString();
+                    .ToString()
+                    .ToPercent();
 
                 var addressee = new Addressee
                 {

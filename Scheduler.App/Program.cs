@@ -23,11 +23,12 @@ namespace Scheduler.App
             var mailDeliveryDirectory = FilePathFactory(Startup.Configuration.GetValue<string>(global.MailDeliveryDirectory));
             var messageSendTimeInterval = Startup.Configuration.GetValue<string>(global.MessageSendTimeInterval);
             var messageTemplate = Startup.Configuration.GetValue<string>(global.MessageTemplate);
+            var razorTemplate = Startup.Configuration.GetValue<string>(global.RazorTemplateFile);
 
             ILogger logger = new Logger(Startup.Configuration);
             ICsvHelper csvHelper = new Csv();
             IScheduler scheduler = new Scheduler.Impl.Scheduler.Scheduler(logger);
-            IMailer mailer = new Mailer(messageTemplate, mailDeliveryDirectory);
+            IMailer mailer = new Mailer(messageTemplate, razorTemplate, mailDeliveryDirectory);
 
             ////IDataGenerator<Customer> dataGenerator = new CustomerDataGenerator(123);
             ////var customerData = dataGenerator.GenerateRecords(100_000, logger);
@@ -39,9 +40,6 @@ namespace Scheduler.App
             scheduler.AddJob(job);
 
             await scheduler.StartAsync();
-
-
-
         }
 
         public static MailerJobSettings MailerJobSettingsFactory(IConfiguration configuration, ILogger logger, ICsvHelper csvHelper, IMailer mailer)

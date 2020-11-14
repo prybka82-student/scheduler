@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="FluentEmail.Core" Version="2.8.0" />
+    <PackageReference Include="FluentEmail.Razor" Version="2.8.0" />
     <PackageReference Include="FluentEmail.Smtp" Version="2.8.0" />
   </ItemGroup>
 

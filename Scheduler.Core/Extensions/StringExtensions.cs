@@ -7,6 +7,19 @@ namespace Scheduler.Core.Extensions
 {
     public static class StringExtensions
     {
+        public static string ToPercent(this string percent, int digits = 0)
+        {
+            if (decimal.TryParse(percent, out decimal val))
+            {
+                val = val * 100;
+                val = Math.Round(val, digits);
+
+                return $"{val}%";
+            }
+
+            return percent;
+        }
+
         public static TimeSpan ToTimeSpan(this string cron)
         {
             var parts = cron

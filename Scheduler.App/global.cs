@@ -16,5 +16,6 @@ namespace Scheduler.App
         public static readonly string SubjectTemplate = "SubjectTemplate";
         public static readonly string SubjectTemplateDiscountPlaceholder = "SubjectTemplateDiscountPlaceholder";
         public static readonly string SqlConnectionString = "SqlConnectionString";
+        internal static readonly string RazorTemplateFile = "RazorTemplateFile";
     }
 }
