@@ -38,12 +38,13 @@ namespace Scheduler.App
                     serviceConfig.WhenStopped(x => x.Stop());
                 });
 
-                //hostConfig.RunAsLocalSystem();
-                hostConfig.RunAsLocalService();
+                hostConfig.RunAsLocalSystem();
                 hostConfig.SetDescription("State-of-the-art mailing scheduler");
                 hostConfig.SetDisplayName("Mailing Scheduler Service");
                 hostConfig.SetServiceName("SchedulerService");
             });
+
+            //testy
 
             //var customerDataFilePath = Startup.Configuration.GetValue<string>(global.CustomerDataFile);
             //var mailDeliveryDirectory = FilePathFactory(Startup.Configuration.GetValue<string>(global.MailDeliveryDirectory));
