@@ -12,6 +12,8 @@ namespace Scheduler.App.Interfaces
         void AddJob(IJob job);
 
         Task StartAsync();
+
+        void Cancel();
                 
     }
 }

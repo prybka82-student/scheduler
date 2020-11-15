@@ -18,13 +18,11 @@ namespace Scheduler.Impl.Mailer
 {
     public class Mailer : IMailer
     {
-        string _template;
         string _deliveryDirectory;
         string _razorTemplateFileName;
 
-        public Mailer(string template, string razorTemplateFileName, string deliveryDirectory)
+        public Mailer(string razorTemplateFileName, string deliveryDirectory)
         {
-            _template = template ?? "<h1>Dear @Model.Title @Model.Surname</h1><p>We would like to offer you a discount of @Model.Discount.</p><p>Please, feel free to use it at your convenience.</p><p>Yours Best Vendor</p>";
             _deliveryDirectory = deliveryDirectory ?? "..\\emails";
             _razorTemplateFileName = razorTemplateFileName;
 

@@ -49,6 +49,8 @@ namespace Scheduler.Impl.Scheduler
 
         }
 
+        public void Cancel() => _cts.Cancel();
+
         private void CancelKeyPress(object sender, ConsoleCancelEventArgs e)
         {
             if (e.SpecialKey == ConsoleSpecialKey.ControlC)

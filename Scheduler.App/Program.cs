@@ -15,54 +15,37 @@ namespace Scheduler.App
 {
     class Program
     {
-        public static void Do() => Console.WriteLine("It's alive!");
-
         static async Task Main(string[] args)
         {
-            var customerDataFilePath = Startup.Configuration.GetValue<string>(global.CustomerDataFile);
-            var mailDeliveryDirectory = FilePathFactory(Startup.Configuration.GetValue<string>(global.MailDeliveryDirectory));
-            var messageSendTimeInterval = Startup.Configuration.GetValue<string>(global.MessageSendTimeInterval);
-            var messageTemplate = Startup.Configuration.GetValue<string>(global.MessageTemplate);
-            var razorTemplate = Startup.Configuration.GetValue<string>(global.RazorTemplateFile);
+            //var customerDataFilePath = Startup.Configuration.GetValue<string>(global.CustomerDataFile);
+            //var mailDeliveryDirectory = FilePathFactory(Startup.Configuration.GetValue<string>(global.MailDeliveryDirectory));
+            //var messageSendTimeInterval = Startup.Configuration.GetValue<string>(global.MessageSendTimeInterval);
+            //var messageTemplate = Startup.Configuration.GetValue<string>(global.MessageTemplate);
+            //var razorTemplate = Startup.Configuration.GetValue<string>(global.RazorTemplateFile);
 
-            ILogger logger = new Logger(Startup.Configuration);
-            ICsvHelper csvHelper = new Csv();
-            IScheduler scheduler = new Scheduler.Impl.Scheduler.Scheduler(logger);
-            IMailer mailer = new Mailer(messageTemplate, razorTemplate, mailDeliveryDirectory);
+            //ILogger logger = new Logger(Startup.Configuration);
+            //ICsvHelper csvHelper = new Csv();
+            //IScheduler scheduler = new Scheduler.Impl.Scheduler.Scheduler(logger);
+            //IMailer mailer = new Mailer(messageTemplate, razorTemplate, mailDeliveryDirectory);
 
             ////IDataGenerator<Customer> dataGenerator = new CustomerDataGenerator(123);
             ////var customerData = dataGenerator.GenerateRecords(100_000, logger);
             ////csvHelper.SaveToFile(customerData, customerDataFilePath, logger);
 
-            var mailerJobSettings = MailerJobSettingsFactory(Startup.Configuration, logger, csvHelper, mailer);
-            IJob job = new MailerJob(nameof(MailerJob), messageSendTimeInterval, new CancellationToken(), mailerJobSettings);
+            //var mailerJobSettings = MailerJobSettingsFactory(Startup.Configuration, logger, csvHelper, mailer);
+            //IJob job = new MailerJob(nameof(MailerJob), messageSendTimeInterval, new CancellationToken(), mailerJobSettings);
+
+            IScheduler scheduler = Startup.ServiceSettings.Scheduler;
+            IJob job = Startup.ServiceSettings.Job;
 
             scheduler.AddJob(job);
 
             await scheduler.StartAsync();
         }
 
-        public static MailerJobSettings MailerJobSettingsFactory(IConfiguration configuration, ILogger logger, ICsvHelper csvHelper, IMailer mailer)
-        {
-            var companyData = new Addressee();
-            configuration.Bind(global.CompanyData, companyData);
+        
 
-            return new MailerJobSettings
-            {
-                Logger = logger,
-                CsvHelper = csvHelper,
-                Mailer = mailer,
-
-                BatchSize = configuration.GetValue<int>(global.BatchSize),
-                CompanyData = companyData,
-                CustomerDataFilePath = FilePathFactory(configuration.GetValue<string>(global.CustomerDataFile)),
-                SubjectTemplate = configuration.GetValue<string>(global.SubjectTemplate),
-                SubjectTemplateDiscountPlaceholder = configuration.GetValue<string>(global.SubjectTemplateDiscountPlaceholder)
-            };
-        }
-
-        public static string FilePathFactory(string fileOrDirectory)
-            => Path.Combine(AppDomain.CurrentDomain.BaseDirectory, fileOrDirectory);
+        
 
     }
 }

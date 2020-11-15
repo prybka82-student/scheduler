@@ -90,7 +90,6 @@ C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Sc
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\obj\Debug\netcoreapp3.1\Scheduler.App.csprojAssemblyReference.cache
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\obj\Debug\netcoreapp3.1\Scheduler.App.AssemblyInfoInputs.cache
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\obj\Debug\netcoreapp3.1\Scheduler.App.AssemblyInfo.cs
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\obj\Debug\netcoreapp3.1\Scheduler.App.csproj.CoreCompileInputs.cache
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\obj\Debug\netcoreapp3.1\Scheduler.App.csproj.CopyComplete
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\obj\Debug\netcoreapp3.1\Scheduler.App.dll
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\obj\Debug\netcoreapp3.1\Scheduler.App.pdb
@@ -260,3 +259,15 @@ C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Sc
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\refs\System.Xml.XPath.dll
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\refs\System.Xml.XPath.XDocument.dll
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\refs\WindowsBase.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\System.Diagnostics.EventLog.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\System.ServiceProcess.ServiceController.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\System.Threading.AccessControl.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\Topshelf.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\TopShelf.ServiceInstaller.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.EventLog.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.ServiceProcess.ServiceController.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Threading.AccessControl.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\obj\Debug\netcoreapp3.1\Scheduler.App.csproj.CoreCompileInputs.cache
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\Scheduler.Impl.WindowsService.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.App\bin\Debug\netcoreapp3.1\Scheduler.Impl.WindowsService.pdb
