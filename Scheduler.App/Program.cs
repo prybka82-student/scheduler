@@ -10,6 +10,8 @@ using System.IO;
 using System;
 using System.Threading.Tasks;
 using System.Threading;
+using Topshelf;
+using Scheduler.Impl.WindowsService;
 
 namespace Scheduler.App
 {
@@ -17,6 +19,32 @@ namespace Scheduler.App
     {
         static async Task Main(string[] args)
         {
+            //IDataGenerator<Customer> dataGenerator = new CustomerDataGenerator(123);
+            //var customerData = dataGenerator.GenerateRecords(100_000, logger);
+            //csvHelper.SaveToFile(customerData, customerDataFilePath, logger);
+
+            /*
+             * https://medium.com/wortell/building-a-windows-service-application-using-topshelf-part-1-of-2-getting-started-c76149e792ed
+             */
+
+            var serviceSettings = Startup.ServiceSettings;
+
+            HostFactory.Run(hostConfig =>
+            {
+                hostConfig.Service<SchedulerService>(serviceConfig =>
+                {
+                    serviceConfig.ConstructUsing(() => new SchedulerService(serviceSettings));
+                    serviceConfig.WhenStarted(async x => await x.StartAsync());
+                    serviceConfig.WhenStopped(x => x.Stop());
+                });
+
+                //hostConfig.RunAsLocalSystem();
+                hostConfig.RunAsLocalService();
+                hostConfig.SetDescription("State-of-the-art mailing scheduler");
+                hostConfig.SetDisplayName("Mailing Scheduler Service");
+                hostConfig.SetServiceName("SchedulerService");
+            });
+
             //var customerDataFilePath = Startup.Configuration.GetValue<string>(global.CustomerDataFile);
             //var mailDeliveryDirectory = FilePathFactory(Startup.Configuration.GetValue<string>(global.MailDeliveryDirectory));
             //var messageSendTimeInterval = Startup.Configuration.GetValue<string>(global.MessageSendTimeInterval);
@@ -28,24 +56,20 @@ namespace Scheduler.App
             //IScheduler scheduler = new Scheduler.Impl.Scheduler.Scheduler(logger);
             //IMailer mailer = new Mailer(messageTemplate, razorTemplate, mailDeliveryDirectory);
 
-            ////IDataGenerator<Customer> dataGenerator = new CustomerDataGenerator(123);
-            ////var customerData = dataGenerator.GenerateRecords(100_000, logger);
-            ////csvHelper.SaveToFile(customerData, customerDataFilePath, logger);
-
             //var mailerJobSettings = MailerJobSettingsFactory(Startup.Configuration, logger, csvHelper, mailer);
             //IJob job = new MailerJob(nameof(MailerJob), messageSendTimeInterval, new CancellationToken(), mailerJobSettings);
 
-            IScheduler scheduler = Startup.ServiceSettings.Scheduler;
-            IJob job = Startup.ServiceSettings.Job;
+            //IScheduler scheduler = Startup.ServiceSettings.Scheduler;
+            //IJob job = Startup.ServiceSettings.Job;
 
-            scheduler.AddJob(job);
+            //scheduler.AddJob(job);
 
-            await scheduler.StartAsync();
+            //await scheduler.StartAsync();
         }
 
-        
 
-        
+
+
 
     }
 }

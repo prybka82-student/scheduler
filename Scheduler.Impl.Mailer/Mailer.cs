@@ -23,7 +23,7 @@ namespace Scheduler.Impl.Mailer
 
         public Mailer(string razorTemplateFileName, string deliveryDirectory)
         {
-            _deliveryDirectory = deliveryDirectory ?? "..\\emails";
+            _deliveryDirectory = deliveryDirectory ?? "emails";
             _razorTemplateFileName = razorTemplateFileName;
 
             CreateDeliveryDirectory(_deliveryDirectory);

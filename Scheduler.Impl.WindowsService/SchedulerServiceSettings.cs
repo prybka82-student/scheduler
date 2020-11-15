@@ -26,6 +26,5 @@ namespace Scheduler.Impl.WindowsService
 
         public IMailer Mailer { get; set; }
 
-
     }
 }
