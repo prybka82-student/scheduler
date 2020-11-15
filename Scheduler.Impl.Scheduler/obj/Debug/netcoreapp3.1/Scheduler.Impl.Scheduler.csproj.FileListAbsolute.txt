@@ -1,0 +1,12 @@
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Scheduler\bin\Debug\netcoreapp3.1\Scheduler.Impl.Scheduler.deps.json
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Scheduler\bin\Debug\netcoreapp3.1\Scheduler.Impl.Scheduler.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Scheduler\bin\Debug\netcoreapp3.1\Scheduler.Impl.Scheduler.pdb
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Scheduler\bin\Debug\netcoreapp3.1\Scheduler.Core.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Scheduler\bin\Debug\netcoreapp3.1\Scheduler.Core.pdb
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Scheduler\obj\Debug\netcoreapp3.1\Scheduler.Impl.Scheduler.csprojAssemblyReference.cache
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Scheduler\obj\Debug\netcoreapp3.1\Scheduler.Impl.Scheduler.AssemblyInfoInputs.cache
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Scheduler\obj\Debug\netcoreapp3.1\Scheduler.Impl.Scheduler.AssemblyInfo.cs
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Scheduler\obj\Debug\netcoreapp3.1\Scheduler.Impl.Scheduler.csproj.CopyComplete
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Scheduler\obj\Debug\netcoreapp3.1\Scheduler.Impl.Scheduler.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Scheduler\obj\Debug\netcoreapp3.1\Scheduler.Impl.Scheduler.pdb
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.Scheduler\obj\Debug\netcoreapp3.1\Scheduler.Impl.Scheduler.csproj.CoreCompileInputs.cache

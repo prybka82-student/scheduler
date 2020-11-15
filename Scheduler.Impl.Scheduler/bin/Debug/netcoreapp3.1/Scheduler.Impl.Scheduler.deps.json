@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Scheduler.Impl.Scheduler/1.0.0": {
+        "dependencies": {
+          "Scheduler.Core": "1.0.0"
+        },
+        "runtime": {
+          "Scheduler.Impl.Scheduler.dll": {}
+        }
+      },
+      "Scheduler.Core/1.0.0": {
+        "runtime": {
+          "Scheduler.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Scheduler.Impl.Scheduler/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Scheduler.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

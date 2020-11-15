@@ -1,0 +1,12 @@
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.DataGenerator\bin\Debug\netcoreapp3.1\Scheduler.Impl.DataGenerator.deps.json
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.DataGenerator\bin\Debug\netcoreapp3.1\Scheduler.Impl.DataGenerator.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.DataGenerator\bin\Debug\netcoreapp3.1\Scheduler.Impl.DataGenerator.pdb
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.DataGenerator\obj\Debug\netcoreapp3.1\Scheduler.Impl.DataGenerator.csprojAssemblyReference.cache
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.DataGenerator\obj\Debug\netcoreapp3.1\Scheduler.Impl.DataGenerator.AssemblyInfoInputs.cache
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.DataGenerator\obj\Debug\netcoreapp3.1\Scheduler.Impl.DataGenerator.AssemblyInfo.cs
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.DataGenerator\obj\Debug\netcoreapp3.1\Scheduler.Impl.DataGenerator.csproj.CoreCompileInputs.cache
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.DataGenerator\obj\Debug\netcoreapp3.1\Scheduler.Impl.DataGenerator.csproj.CopyComplete
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.DataGenerator\obj\Debug\netcoreapp3.1\Scheduler.Impl.DataGenerator.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.DataGenerator\obj\Debug\netcoreapp3.1\Scheduler.Impl.DataGenerator.pdb
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.DataGenerator\bin\Debug\netcoreapp3.1\Scheduler.Core.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.DataGenerator\bin\Debug\netcoreapp3.1\Scheduler.Core.pdb

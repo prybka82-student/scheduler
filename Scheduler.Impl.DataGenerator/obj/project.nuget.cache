@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Casccq7YWLVisIIg/BeyXE/Nej9hT5YufTv1P2ZEr9qW2R2xw8vLP5IrCkp/jzGtgsUa7PANo/Xfk8vs8vy6VQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\piotr\\Desktop\\Zaawansowane techniki programowania\\Projekty\\Scheduler\\Scheduler.Impl.DataGenerator\\Scheduler.Impl.DataGenerator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\piotr\\.nuget\\packages\\bogus\\31.0.3\\bogus.31.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

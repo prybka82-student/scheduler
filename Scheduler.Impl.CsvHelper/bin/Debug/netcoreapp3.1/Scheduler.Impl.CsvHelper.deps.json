@@ -1,0 +1,79 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Scheduler.Impl.CsvHelper/1.0.0": {
+        "dependencies": {
+          "CsvHelper": "15.0.10",
+          "Scheduler.Core": "1.0.0",
+          "System.Linq.Async": "5.0.0"
+        },
+        "runtime": {
+          "Scheduler.Impl.CsvHelper.dll": {}
+        }
+      },
+      "CsvHelper/15.0.10": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/CsvHelper.dll": {
+            "assemblyVersion": "15.0.0.0",
+            "fileVersion": "15.0.10.0"
+          }
+        }
+      },
+      "Microsoft.CSharp/4.5.0": {},
+      "System.Linq.Async/5.0.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/System.Linq.Async.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.1"
+          }
+        }
+      },
+      "Scheduler.Core/1.0.0": {
+        "runtime": {
+          "Scheduler.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Scheduler.Impl.CsvHelper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CsvHelper/15.0.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TGRBP92udO9+ffZkufQEBoLw2fadjHnvxVRefWVk2HPVNmKbOV0xKfmXzmnc81M+kl193SnwJphw1ZNMPgpf4g==",
+      "path": "csvhelper/15.0.10",
+      "hashPath": "csvhelper.15.0.10.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+      "path": "microsoft.csharp/4.5.0",
+      "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
+    },
+    "System.Linq.Async/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cPtIuuH8TIjVHSi2ewwReWGW1PfChPE0LxPIDlfwVcLuTM9GANFTXiMB7k3aC4sk3f0cQU25LNKzx+jZMxijqw==",
+      "path": "system.linq.async/5.0.0",
+      "hashPath": "system.linq.async.5.0.0.nupkg.sha512"
+    },
+    "Scheduler.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
