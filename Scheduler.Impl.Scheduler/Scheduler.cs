@@ -35,17 +35,19 @@ namespace Scheduler.Impl.Scheduler
             Console.WriteLine("Press Ctrl + C to stop");
             Console.CancelKeyPress += CancelKeyPress;
 
-            await Task.Run(async () =>
+            while (_job.CancellationToken.IsCancellationRequested.No())
             {
-                while (_job.CancellationToken.IsCancellationRequested.No())
-                {
-                    await _job.DoWorkAsync();
+                await _job.DoWorkAsync();
 
-                    _logger.Debug($"\n{new string('=', 20)}\nJob done\n{new string('=', 20)}\n\n\n");
-                    
-                    await Task.Delay(_job.CronInterval.ToTimeSpan());
-                }
-            }, _job.CancellationToken);
+                _logger.Debug($"\n{new string('=', 20)}\nJob done\n{new string('=', 20)}\n\n\n");
+
+                await Task.Delay(_job.CronInterval.ToTimeSpan());
+            }
+
+            //await Task.Run(async () =>
+            //{
+                
+            //}, _job.CancellationToken);
 
         }
 

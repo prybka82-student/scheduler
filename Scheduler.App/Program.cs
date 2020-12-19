@@ -23,10 +23,6 @@ namespace Scheduler.App
             //var customerData = dataGenerator.GenerateRecords(100_000, logger);
             //csvHelper.SaveToFile(customerData, customerDataFilePath, logger);
 
-            /*
-             * https://medium.com/wortell/building-a-windows-service-application-using-topshelf-part-1-of-2-getting-started-c76149e792ed
-             */
-
             var serviceSettings = Startup.ServiceSettings;
 
             HostFactory.Run(hostConfig =>
@@ -44,33 +40,6 @@ namespace Scheduler.App
                 hostConfig.SetServiceName("SchedulerService");
             });
 
-            //testy
-
-            //var customerDataFilePath = Startup.Configuration.GetValue<string>(global.CustomerDataFile);
-            //var mailDeliveryDirectory = FilePathFactory(Startup.Configuration.GetValue<string>(global.MailDeliveryDirectory));
-            //var messageSendTimeInterval = Startup.Configuration.GetValue<string>(global.MessageSendTimeInterval);
-            //var messageTemplate = Startup.Configuration.GetValue<string>(global.MessageTemplate);
-            //var razorTemplate = Startup.Configuration.GetValue<string>(global.RazorTemplateFile);
-
-            //ILogger logger = new Logger(Startup.Configuration);
-            //ICsvHelper csvHelper = new Csv();
-            //IScheduler scheduler = new Scheduler.Impl.Scheduler.Scheduler(logger);
-            //IMailer mailer = new Mailer(messageTemplate, razorTemplate, mailDeliveryDirectory);
-
-            //var mailerJobSettings = MailerJobSettingsFactory(Startup.Configuration, logger, csvHelper, mailer);
-            //IJob job = new MailerJob(nameof(MailerJob), messageSendTimeInterval, new CancellationToken(), mailerJobSettings);
-
-            //IScheduler scheduler = Startup.ServiceSettings.Scheduler;
-            //IJob job = Startup.ServiceSettings.Job;
-
-            //scheduler.AddJob(job);
-
-            //await scheduler.StartAsync();
         }
-
-
-
-
-
     }
 }
