@@ -8,6 +8,7 @@ using Scheduler.Impl.WindowsService;
 using System;
 using System.IO;
 using System.Threading;
+using Scheduler.Impl.MailerJob;
 
 namespace Scheduler.App
 {
@@ -46,8 +47,7 @@ namespace Scheduler.App
             Scheduler  = new Scheduler.Impl.Scheduler.Scheduler(_logger),
             Mailer = _mailer,
 
-            //Job = new MailerJob(nameof(MailerJob), _interval, new System.Threading.CancellationToken(), _jobSettings)
-            Job = new Scheduler.Impl.MediatorMailerJob.MailerJob(null, new CancellationToken(), _jobSettings)
+            Job = new MailerJob(nameof(MailerJob), _interval, new System.Threading.CancellationToken(), _jobSettings)
         };
 
         public static string FilePathFactory(string fileOrDirectory)

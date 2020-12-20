@@ -1,0 +1,7 @@
+2020-12-20 11:26:14.912 +01:00 [DBG] GenerateRecords: Operation started.
+2020-12-20 11:26:16.039 +01:00 [INF] GenerateRecords: The operation lasted 00:00:01.0767409.
+2020-12-20 11:26:16.075 +01:00 [DBG] SaveToFileAsync: Beginning to write data to path customers.csv.
+2020-12-20 11:26:16.892 +01:00 [INF] SaveToFileAsync: Successfully write 100000 records to customers.csv.
+2020-12-20 11:41:40.857 +01:00 [ERR] DoWorkAsync: There are no emails to send.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Scheduler.Impl.MediatorMailerJob.MailerJob.DoWorkAsync() in C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MediatorMailerJob\MailerJob.cs:line 53

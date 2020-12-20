@@ -46,7 +46,6 @@ namespace Scheduler.MediatorApp
             Scheduler = new Scheduler.Impl.Scheduler.Scheduler(_logger),
             Mailer = _mailer,
 
-            //Job = new MailerJob(nameof(MailerJob), _interval, new System.Threading.CancellationToken(), _jobSettings)
             Job = new Scheduler.Impl.MediatorMailerJob.MailerJob(null, new CancellationToken(), _jobSettings)
         };
 
