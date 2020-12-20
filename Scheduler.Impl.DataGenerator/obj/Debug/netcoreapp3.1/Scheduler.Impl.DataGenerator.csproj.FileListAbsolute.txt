@@ -9,3 +9,4 @@ C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Sc
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.DataGenerator\obj\Debug\netcoreapp3.1\Scheduler.Impl.DataGenerator.csproj.CopyComplete
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.DataGenerator\obj\Debug\netcoreapp3.1\Scheduler.Impl.DataGenerator.dll
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.DataGenerator\obj\Debug\netcoreapp3.1\Scheduler.Impl.DataGenerator.pdb
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.DataGenerator\obj\Debug\netcoreapp3.1\Scheduler.Impl.DataGenerator.csprojAssemblyReference.cache

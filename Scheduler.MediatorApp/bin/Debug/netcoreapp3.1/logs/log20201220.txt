@@ -5,3 +5,14 @@
 2020-12-20 11:41:40.857 +01:00 [ERR] DoWorkAsync: There are no emails to send.
 System.NullReferenceException: Object reference not set to an instance of an object.
    at Scheduler.Impl.MediatorMailerJob.MailerJob.DoWorkAsync() in C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MediatorMailerJob\MailerJob.cs:line 53
+2020-12-20 12:11:26.513 +01:00 [ERR] DoWorkAsync: The following exception occured: Handler was not found for request of type MediatR.IRequestHandler`2[Scheduler.Impl.MediatorMailerJob.Adapters.CsvHelper.LoadCustomerData,System.Collections.Generic.IEnumerable`1[Scheduler.Core.Entities.Customer]]. Register your handlers with the container. See the samples in GitHub for examples.
+System.InvalidOperationException: Handler was not found for request of type MediatR.IRequestHandler`2[Scheduler.Impl.MediatorMailerJob.Adapters.CsvHelper.LoadCustomerData,System.Collections.Generic.IEnumerable`1[Scheduler.Core.Entities.Customer]]. Register your handlers with the container. See the samples in GitHub for examples.
+   at MediatR.Internal.RequestHandlerBase.GetHandler[THandler](ServiceFactory factory)
+   at MediatR.Internal.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Scheduler.Impl.MediatorMailerJob.MailerJob.DoWorkAsync() in C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MediatorMailerJob\MailerJob.cs:line 53

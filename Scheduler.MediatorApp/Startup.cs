@@ -7,7 +7,10 @@ using Scheduler.Impl.Mailer;
 using Scheduler.Impl.WindowsService;
 using System;
 using System.IO;
+using System.Reflection;
 using System.Threading;
+using Microsoft.Extensions.DependencyInjection;
+using MediatR;
 
 namespace Scheduler.MediatorApp
 {
@@ -30,7 +33,11 @@ namespace Scheduler.MediatorApp
         static string _interval = Startup.Configuration.GetValue<string>(global.MessageSendTimeInterval);
         static MailerJobSettings _jobSettings = MailerJobSettingsFactory(Startup.Configuration, _logger, _csvHelper, _mailer);
 
+        static IServiceProvider _serviceProvider = new ServiceCollection()
+            .AddMediatR(Assembly.GetExecutingAssembly())
+            .BuildServiceProvider();
 
+        private static IMediator _mediator = _serviceProvider.GetService<IMediator>();
 
         public static IServiceSettings ServiceSettings { get; } = new SchedulerServiceSettings
         {
@@ -46,7 +53,7 @@ namespace Scheduler.MediatorApp
             Scheduler = new Scheduler.Impl.Scheduler.Scheduler(_logger),
             Mailer = _mailer,
 
-            Job = new Scheduler.Impl.MediatorMailerJob.MailerJob(null, new CancellationToken(), _jobSettings)
+            Job = new Scheduler.Impl.MediatorMailerJob.MailerJob(_mediator, new CancellationToken(), _jobSettings)
         };
 
         public static string FilePathFactory(string fileOrDirectory)

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cbV5w6sPK1ylOzOz4QAL2VJGw4wUa2Ta1OHFRGh5Iqq8076xaIRTNtRtYdIqGOjkayNIeQCL1DaUryEHboW9Eg==",
+  "dgSpecHash": "roXhP0Ur9uO8EEDvFekbB7PLBOpTTNlzCny58hrIY5a76pgFY6a9Bt3CL61zWORYI8uw/N9FRRNdcZ6R7TfOlQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\piotr\\Desktop\\Zaawansowane techniki programowania\\Projekty\\Scheduler\\Scheduler.MediatorApp\\Scheduler.MediatorApp.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\piotr\\.nuget\\packages\\fluentemail.razor\\2.8.0\\fluentemail.razor.2.8.0.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\fluentemail.smtp\\2.8.0\\fluentemail.smtp.2.8.0.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\microsoft.aspnetcore\\2.2.0\\microsoft.aspnetcore.2.2.0.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
@@ -56,8 +57,8 @@
     "C:\\Users\\piotr\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\2.2.0\\microsoft.extensions.configuration.fileextensions.2.2.0.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\microsoft.extensions.configuration.json\\2.2.0\\microsoft.extensions.configuration.json.2.2.0.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\microsoft.extensions.configuration.usersecrets\\2.2.0\\microsoft.extensions.configuration.usersecrets.2.2.0.nupkg.sha512",
-    "C:\\Users\\piotr\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\2.2.0\\microsoft.extensions.dependencyinjection.2.2.0.nupkg.sha512",
-    "C:\\Users\\piotr\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.4\\microsoft.extensions.dependencyinjection.abstractions.3.1.4.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\microsoft.extensions.dependencymodel\\2.0.4\\microsoft.extensions.dependencymodel.2.0.4.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\2.2.0\\microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\2.2.0\\microsoft.extensions.fileproviders.physical.2.2.0.nupkg.sha512",
