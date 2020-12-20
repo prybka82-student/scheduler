@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Scheduler.App.Interfaces
+namespace Scheduler.Core.Interfaces
 {
     public interface IJob
     {

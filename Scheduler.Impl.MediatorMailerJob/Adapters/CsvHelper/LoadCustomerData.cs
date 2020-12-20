@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using MediatR;
-using Scheduler.App.Entities;
-using Scheduler.App.Interfaces;
+using Scheduler.Core.Entities;
+using Scheduler.Core.Interfaces;
 
 namespace Scheduler.Impl.MediatorMailerJob.Adapters.CsvHelper
 {

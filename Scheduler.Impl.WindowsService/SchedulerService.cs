@@ -1,5 +1,4 @@
-﻿using Scheduler.App.Interfaces;
-using Scheduler.Core.Interfaces;
+﻿using Scheduler.Core.Interfaces;
 using System;
 using System.Threading.Tasks;
 

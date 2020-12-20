@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Scheduler.App.Entities
+namespace Scheduler.Core.Entities
 {
     public class Customer : Addressee
     {

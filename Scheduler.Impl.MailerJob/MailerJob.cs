@@ -1,8 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Scheduler.App.Entities;
-using Scheduler.App.Extensions;
-using Scheduler.App.Interfaces;
+using Scheduler.Core.Entities;
 using Scheduler.Core.Extensions;
+using Scheduler.Core.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;

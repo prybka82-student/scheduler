@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
-using Scheduler.App.Entities;
+using Scheduler.Core.Entities;
 using Scheduler.Impl.MediatorMailerJob.Adapters.Mailer;
 
 namespace Scheduler.Impl.MediatorMailerJob.Handlers.Mailer
@@ -22,7 +22,7 @@ namespace Scheduler.Impl.MediatorMailerJob.Handlers.Mailer
         {
             var emailsBatch = await Task.Run(() => request.EmailsBatch);
 
-            _mediator.Publish(new EmailsBatchSent(emailsBatch), cancellationToken);
+            await _mediator.Publish(new EmailsBatchSent(emailsBatch), cancellationToken);
 
             return emailsBatch;
         }

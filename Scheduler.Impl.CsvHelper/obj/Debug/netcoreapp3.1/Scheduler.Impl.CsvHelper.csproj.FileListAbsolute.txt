@@ -1,12 +1,12 @@
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.CsvHelper\bin\Debug\netcoreapp3.1\Scheduler.Impl.CsvHelper.deps.json
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.CsvHelper\bin\Debug\netcoreapp3.1\Scheduler.Impl.CsvHelper.dll
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.CsvHelper\bin\Debug\netcoreapp3.1\Scheduler.Impl.CsvHelper.pdb
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.CsvHelper\bin\Debug\netcoreapp3.1\Scheduler.Core.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.CsvHelper\bin\Debug\netcoreapp3.1\Scheduler.Core.pdb
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.CsvHelper\obj\Debug\netcoreapp3.1\Scheduler.Impl.CsvHelper.csprojAssemblyReference.cache
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.CsvHelper\obj\Debug\netcoreapp3.1\Scheduler.Impl.CsvHelper.AssemblyInfoInputs.cache
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.CsvHelper\obj\Debug\netcoreapp3.1\Scheduler.Impl.CsvHelper.AssemblyInfo.cs
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.CsvHelper\obj\Debug\netcoreapp3.1\Scheduler.Impl.CsvHelper.csproj.CoreCompileInputs.cache
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.CsvHelper\obj\Debug\netcoreapp3.1\Scheduler.Impl.CsvHelper.csproj.CopyComplete
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.CsvHelper\obj\Debug\netcoreapp3.1\Scheduler.Impl.CsvHelper.dll
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.CsvHelper\obj\Debug\netcoreapp3.1\Scheduler.Impl.CsvHelper.pdb
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.CsvHelper\bin\Debug\netcoreapp3.1\Scheduler.Core.dll
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.CsvHelper\bin\Debug\netcoreapp3.1\Scheduler.Core.pdb
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.CsvHelper\obj\Debug\netcoreapp3.1\Scheduler.Impl.CsvHelper.csproj.CoreCompileInputs.cache

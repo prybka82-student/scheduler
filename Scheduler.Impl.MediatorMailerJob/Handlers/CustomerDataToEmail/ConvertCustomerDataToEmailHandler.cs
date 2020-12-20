@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
-using Scheduler.App.Entities;
+using Scheduler.Core.Entities;
 using Scheduler.Impl.MediatorMailerJob.Adapters.CustomerDataToEmail;
 
 namespace Scheduler.Impl.MediatorMailerJob.Handlers.CustomerDataToEmail
@@ -23,7 +23,7 @@ namespace Scheduler.Impl.MediatorMailerJob.Handlers.CustomerDataToEmail
         {
             var emailsWithIds = await Task.Run(() => request.GetEmailsWithIds());
 
-            _mediator.Publish(new CustomerDataToEmailConverted(emailsWithIds), cancellationToken);
+            await _mediator.Publish(new CustomerDataToEmailConverted(emailsWithIds), cancellationToken);
 
             return emailsWithIds;
         }

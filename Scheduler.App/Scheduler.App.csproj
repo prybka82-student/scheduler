@@ -20,6 +20,7 @@
     <ProjectReference Include="..\Scheduler.Impl.Logger\Scheduler.Impl.Logger.csproj" />
     <ProjectReference Include="..\Scheduler.Impl.MailerJob\Scheduler.Impl.MailerJob.csproj" />
     <ProjectReference Include="..\Scheduler.Impl.Mailer\Scheduler.Impl.Mailer.csproj" />
+    <ProjectReference Include="..\Scheduler.Impl.MediatorMailerJob\Scheduler.Impl.MediatorMailerJob.csproj" />
     <ProjectReference Include="..\Scheduler.Impl.Scheduler\Scheduler.Impl.Scheduler.csproj" />
     <ProjectReference Include="..\Scheduler.Impl.WindowsService\Scheduler.Impl.WindowsService.csproj" />
   </ItemGroup>

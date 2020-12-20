@@ -1,9 +1,8 @@
-﻿using Scheduler.App.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Scheduler.App.Interfaces
+namespace Scheduler.Core.Interfaces
 {
     public interface IDataGenerator<T> where T: class
     {

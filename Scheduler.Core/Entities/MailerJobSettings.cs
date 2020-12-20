@@ -1,10 +1,9 @@
-﻿using Scheduler.App.Entities;
-using Scheduler.App.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Scheduler.Core.Interfaces;
 
-namespace Scheduler.App.Entities
+namespace Scheduler.Core.Entities
 {
     public class MailerJobSettings
     {

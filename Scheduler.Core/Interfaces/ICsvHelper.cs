@@ -1,10 +1,9 @@
-﻿using Scheduler.App.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Scheduler.App.Interfaces
+namespace Scheduler.Core.Interfaces
 {
     public interface ICsvHelper
     {

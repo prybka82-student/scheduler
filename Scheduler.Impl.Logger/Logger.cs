@@ -1,16 +1,15 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Scheduler.App.Extensions;
-using Scheduler.App.Interfaces;
 using Serilog;
 using Serilog.Core;
 using System;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
+using Scheduler.Core.Extensions;
 
 namespace Scheduler.Impl.Logger
 {
-    public class Logger : Scheduler.App.Interfaces.ILogger
+    public class Logger : Scheduler.Core.Interfaces.ILogger
     {
         public Logger(IConfiguration configuration)
         {

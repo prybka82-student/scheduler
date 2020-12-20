@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace Scheduler.App.Interfaces
+namespace Scheduler.Core.Interfaces
 {
     public interface ILogger
     {

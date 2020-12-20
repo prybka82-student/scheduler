@@ -1,18 +1,13 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Scheduler.App.Entities;
-using Scheduler.App.Interfaces;
+﻿using Microsoft.Extensions.Configuration;
+using Scheduler.Core.Entities;
 using Scheduler.Core.Interfaces;
 using Scheduler.Impl.CsvHelper;
 using Scheduler.Impl.Logger;
 using Scheduler.Impl.Mailer;
-using Scheduler.Impl.MailerJob;
 using Scheduler.Impl.WindowsService;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
+using System.Threading;
 
 namespace Scheduler.App
 {
@@ -51,7 +46,8 @@ namespace Scheduler.App
             Scheduler  = new Scheduler.Impl.Scheduler.Scheduler(_logger),
             Mailer = _mailer,
 
-            Job = new MailerJob(nameof(MailerJob), _interval, new System.Threading.CancellationToken(), _jobSettings)
+            //Job = new MailerJob(nameof(MailerJob), _interval, new System.Threading.CancellationToken(), _jobSettings)
+            Job = new Scheduler.Impl.MediatorMailerJob.MailerJob(null, new CancellationToken(), _jobSettings)
         };
 
         public static string FilePathFactory(string fileOrDirectory)

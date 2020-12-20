@@ -1,5 +1,5 @@
-﻿using Scheduler.App.Interfaces;
-using Scheduler.App.Entities;
+﻿using Scheduler.Core.Interfaces;
+using Scheduler.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -8,7 +8,7 @@ using System.IO;
 using CsvHelper;
 using System.Globalization;
 using System.Linq;
-using Scheduler.App.Extensions;
+using Scheduler.Core.Extensions;
 
 namespace Scheduler.Impl.CsvHelper
 {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Scheduler.App.Entities;
-using Scheduler.App.Interfaces;
+using Scheduler.Core.Entities;
+using Scheduler.Core.Interfaces;
 using Scheduler.Impl.Logger;
 using Scheduler.Impl.MailerJob;
 using Scheduler.Impl.CsvHelper;
@@ -17,7 +17,7 @@ namespace Scheduler.App
 {
     class Program
     {
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
             //IDataGenerator<Customer> dataGenerator = new CustomerDataGenerator(123);
             //var customerData = dataGenerator.GenerateRecords(100_000, logger);

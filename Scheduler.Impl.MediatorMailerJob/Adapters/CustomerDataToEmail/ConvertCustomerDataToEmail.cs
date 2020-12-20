@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using MediatR;
-using Scheduler.App.Entities;
+using Scheduler.Core.Entities;
 using Scheduler.Core.Extensions;
 
 namespace Scheduler.Impl.MediatorMailerJob.Adapters.CustomerDataToEmail

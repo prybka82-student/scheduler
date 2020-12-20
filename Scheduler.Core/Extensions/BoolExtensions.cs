@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Scheduler.App.Extensions
+namespace Scheduler.Core.Extensions
 {
     public static class BoolExtensions
     {

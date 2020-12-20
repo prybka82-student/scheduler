@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Scheduler.App.Entities;
+using Scheduler.Core.Entities;
 
 namespace Scheduler.Core.Extensions
 {

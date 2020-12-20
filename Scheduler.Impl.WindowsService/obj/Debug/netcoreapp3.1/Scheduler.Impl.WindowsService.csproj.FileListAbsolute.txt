@@ -1,12 +1,12 @@
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.WindowsService\bin\Debug\netcoreapp3.1\Scheduler.Impl.WindowsService.deps.json
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.WindowsService\bin\Debug\netcoreapp3.1\Scheduler.Impl.WindowsService.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.WindowsService\bin\Debug\netcoreapp3.1\Scheduler.Impl.WindowsService.pdb
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.WindowsService\bin\Debug\netcoreapp3.1\Scheduler.Core.dll
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.WindowsService\bin\Debug\netcoreapp3.1\Scheduler.Core.pdb
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.WindowsService\obj\Debug\netcoreapp3.1\Scheduler.Impl.WindowsService.csprojAssemblyReference.cache
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.WindowsService\obj\Debug\netcoreapp3.1\Scheduler.Impl.WindowsService.AssemblyInfoInputs.cache
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.WindowsService\obj\Debug\netcoreapp3.1\Scheduler.Impl.WindowsService.AssemblyInfo.cs
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.WindowsService\obj\Debug\netcoreapp3.1\Scheduler.Impl.WindowsService.csproj.CopyComplete
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.WindowsService\obj\Debug\netcoreapp3.1\Scheduler.Impl.WindowsService.csprojAssemblyReference.cache
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.WindowsService\obj\Debug\netcoreapp3.1\Scheduler.Impl.WindowsService.csproj.CoreCompileInputs.cache
-C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.WindowsService\bin\Debug\netcoreapp3.1\Scheduler.Impl.WindowsService.pdb
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.WindowsService\obj\Debug\netcoreapp3.1\Scheduler.Impl.WindowsService.csproj.CopyComplete
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.WindowsService\obj\Debug\netcoreapp3.1\Scheduler.Impl.WindowsService.dll
 C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.WindowsService\obj\Debug\netcoreapp3.1\Scheduler.Impl.WindowsService.pdb

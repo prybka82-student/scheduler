@@ -1,18 +1,16 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Scheduler.App.Entities;
-using Scheduler.App.Interfaces;
 using FluentEmail.Core;
 using FluentEmail.Smtp;
 using System.Net.Mail;
 using System.IO;
-using Scheduler.App.Extensions;
 using System.ComponentModel.Design;
 using System.Threading;
 using System.Linq;
 using FluentEmail.Razor;
 using System.Reflection;
 using Scheduler.Core.Extensions;
+using Scheduler.Core.Interfaces;
 
 namespace Scheduler.Impl.Mailer
 {
@@ -33,7 +31,7 @@ namespace Scheduler.Impl.Mailer
             FluentEmail.Core.Email.DefaultRenderer = new RazorRenderer();
         }
 
-        public async Task SendAsync(App.Entities.Email email, CancellationToken token, ILogger logger)
+        public async Task SendAsync(Scheduler.Core.Entities.Email email, CancellationToken token, ILogger logger)
         {
             try
             {
@@ -65,11 +63,13 @@ namespace Scheduler.Impl.Mailer
             if (Directory.Exists(_deliveryDirectory).No()) Directory.CreateDirectory(_deliveryDirectory);
         }
 
-        private IFluentEmail MailFactory(Scheduler.App.Entities.Email email, ILogger logger)
+        private IFluentEmail MailFactory(Scheduler.Core.Entities.Email email, ILogger logger)
         {
             try
             {
                 logger?.Debug("Creating new e-mail...");
+
+                
 
                 return FluentEmail.Core.Email
                     .From(emailAddress: email.From.Email, name: $"{email.From.Name} {email.From.Surname}")

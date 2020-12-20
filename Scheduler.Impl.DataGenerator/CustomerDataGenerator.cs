@@ -1,6 +1,6 @@
 ﻿using Bogus;
-using Scheduler.App.Entities;
-using Scheduler.App.Interfaces;
+using Scheduler.Core.Entities;
+using Scheduler.Core.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;

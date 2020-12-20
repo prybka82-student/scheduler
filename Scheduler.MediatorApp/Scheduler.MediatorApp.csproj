@@ -6,12 +6,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Scheduler.Core\Scheduler.Core.csproj" />
     <ProjectReference Include="..\Scheduler.Impl.CsvHelper\Scheduler.Impl.CsvHelper.csproj" />
+    <ProjectReference Include="..\Scheduler.Impl.DataGenerator\Scheduler.Impl.DataGenerator.csproj" />
+    <ProjectReference Include="..\Scheduler.Impl.Logger\Scheduler.Impl.Logger.csproj" />
+    <ProjectReference Include="..\Scheduler.Impl.Mailer\Scheduler.Impl.Mailer.csproj" />
+    <ProjectReference Include="..\Scheduler.Impl.MediatorMailerJob\Scheduler.Impl.MediatorMailerJob.csproj" />
+    <ProjectReference Include="..\Scheduler.Impl.Scheduler\Scheduler.Impl.Scheduler.csproj" />
+    <ProjectReference Include="..\Scheduler.Impl.WindowsService\Scheduler.Impl.WindowsService.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MY8hMZCt4oBf9XdsKin0Grxdmf4GU2UGmZ3LXybN2hegje0esVtlcNqZrNimkaH3oc/PgoKazdSSAgIYuFW8mQ==",
+  "dgSpecHash": "tIbrBTjvQlChgeFuwxHSvyl2xM2zQcUqeb80Na9/s6nrAwGNfkbgPpHcsDc8C0WeIFpX1qk6efkqz9GIgjIgqA==",
   "success": true,
   "projectFilePath": "C:\\Users\\piotr\\Desktop\\Zaawansowane techniki programowania\\Projekty\\Scheduler\\Scheduler.App\\Scheduler.App.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\piotr\\.nuget\\packages\\fluentemail.core\\2.8.0\\fluentemail.core.2.8.0.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\fluentemail.razor\\2.8.0\\fluentemail.razor.2.8.0.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\fluentemail.smtp\\2.8.0\\fluentemail.smtp.2.8.0.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\microsoft.aspnetcore\\2.2.0\\microsoft.aspnetcore.2.2.0.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

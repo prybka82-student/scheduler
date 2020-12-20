@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
-using Scheduler.App.Entities;
+using Scheduler.Core.Entities;
 
 namespace Scheduler.Impl.MediatorMailerJob.Adapters.CustomerDataToEmail
 {
