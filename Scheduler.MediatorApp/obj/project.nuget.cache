@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "crZFI94MtkZ66xNAzl3yV9zatVgTEHILUT01JIU3sO47hyhxgkFFlrj2upVmHN1fYAd8rXEgaCdOzAi7UsZf8g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\piotr\\Desktop\\Zaawansowane techniki programowania\\Projekty\\Scheduler\\Scheduler.MediatorApp\\Scheduler.MediatorApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\piotr\\.nuget\\packages\\csvhelper\\15.0.10\\csvhelper.15.0.10.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\system.linq.async\\5.0.0\\system.linq.async.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,12 @@
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MediatorMailerJob\bin\Debug\netcoreapp3.1\Scheduler.Impl.MediatorMailerJob.deps.json
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MediatorMailerJob\bin\Debug\netcoreapp3.1\Scheduler.Impl.MediatorMailerJob.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MediatorMailerJob\bin\Debug\netcoreapp3.1\Scheduler.Impl.MediatorMailerJob.pdb
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MediatorMailerJob\bin\Debug\netcoreapp3.1\Scheduler.Core.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MediatorMailerJob\bin\Debug\netcoreapp3.1\Scheduler.Core.pdb
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MediatorMailerJob\obj\Debug\netcoreapp3.1\Scheduler.Impl.MediatorMailerJob.csprojAssemblyReference.cache
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MediatorMailerJob\obj\Debug\netcoreapp3.1\Scheduler.Impl.MediatorMailerJob.AssemblyInfoInputs.cache
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MediatorMailerJob\obj\Debug\netcoreapp3.1\Scheduler.Impl.MediatorMailerJob.AssemblyInfo.cs
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MediatorMailerJob\obj\Debug\netcoreapp3.1\Scheduler.Impl.MediatorMailerJob.csproj.CoreCompileInputs.cache
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MediatorMailerJob\obj\Debug\netcoreapp3.1\Scheduler.Impl.MediatorMailerJob.csproj.CopyComplete
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MediatorMailerJob\obj\Debug\netcoreapp3.1\Scheduler.Impl.MediatorMailerJob.dll
+C:\Users\piotr\Desktop\Zaawansowane techniki programowania\Projekty\Scheduler\Scheduler.Impl.MediatorMailerJob\obj\Debug\netcoreapp3.1\Scheduler.Impl.MediatorMailerJob.pdb

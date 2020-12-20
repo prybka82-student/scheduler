@@ -80,37 +80,8 @@ namespace Scheduler.Impl.MailerJob
         }
 
         private IEnumerable<(int id, Email email)> CustomerDataToEmail(IEnumerable<Customer> customerDataBatch)
-        {
-            var counter = _sentMessageIds
-                .Count;
-
-            foreach (var item in customerDataBatch)
-            {
-                var discount = item
-                    .Discount
-                    .ToString()
-                    .ToPercent();
-
-                var addressee = new Addressee
-                {
-                    Email = item.Email,
-                    Name = item.Name,
-                    Surname = item.Surname,
-                    Title = item.Title
-                };
-
-                var mail = new Email
-                {
-                    Content = discount,
-                    Subject = _subjectTemplate
-                        .Replace(_subjectTemplateDiscountPlaceholder, discount),
-                    From = _companyData,
-                    To = addressee
-                };
-
-                yield return (++counter, mail);
-            }
-        }
+            => customerDataBatch.CustomerDataToEmail(_sentMessageIds.Count, _subjectTemplate,
+                _subjectTemplateDiscountPlaceholder, _companyData);
 
         private async Task SendMessageAsync(int emailId, Email email, CancellationToken token)
         {

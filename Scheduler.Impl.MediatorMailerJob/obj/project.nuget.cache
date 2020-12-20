@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vdkizE4RIymtVUAAGzihI1Xk1SOWuk3hVISxXQHACPV0gZOhB1x9rC8LCIv0pu6eNcNL9cYdiqYPwNoRe3oJPw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\piotr\\Desktop\\Zaawansowane techniki programowania\\Projekty\\Scheduler\\Scheduler.Impl.MediatorMailerJob\\Scheduler.Impl.MediatorMailerJob.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\piotr\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

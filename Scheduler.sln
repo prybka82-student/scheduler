@@ -21,7 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler.Impl.MailerJob", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler.Core", "Scheduler.Core\Scheduler.Core.csproj", "{A5DDF4B7-7629-4D74-B442-3C2C41D72231}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scheduler.Impl.WindowsService", "Scheduler.Impl.WindowsService\Scheduler.Impl.WindowsService.csproj", "{53925C75-96F3-49AC-9DFD-98ABFD395213}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler.Impl.WindowsService", "Scheduler.Impl.WindowsService\Scheduler.Impl.WindowsService.csproj", "{53925C75-96F3-49AC-9DFD-98ABFD395213}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scheduler.MediatorApp", "Scheduler.MediatorApp\Scheduler.MediatorApp.csproj", "{AD008C12-013F-4CF6-9F63-6629E1D28BD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scheduler.Impl.MediatorMailerJob", "Scheduler.Impl.MediatorMailerJob\Scheduler.Impl.MediatorMailerJob.csproj", "{EAB5552F-1296-460A-B602-41A105568656}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +69,14 @@ Global
 		{53925C75-96F3-49AC-9DFD-98ABFD395213}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53925C75-96F3-49AC-9DFD-98ABFD395213}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53925C75-96F3-49AC-9DFD-98ABFD395213}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD008C12-013F-4CF6-9F63-6629E1D28BD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD008C12-013F-4CF6-9F63-6629E1D28BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD008C12-013F-4CF6-9F63-6629E1D28BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD008C12-013F-4CF6-9F63-6629E1D28BD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAB5552F-1296-460A-B602-41A105568656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAB5552F-1296-460A-B602-41A105568656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAB5552F-1296-460A-B602-41A105568656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAB5552F-1296-460A-B602-41A105568656}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,6 +89,7 @@ Global
 		{E0B25EF9-0398-4C1D-B790-D9DF3DE1523C} = {D658872D-810A-407E-AAF3-F53CD2A06E5B}
 		{2F3C7620-E41C-4A74-AEDF-9E250F2EB534} = {D658872D-810A-407E-AAF3-F53CD2A06E5B}
 		{53925C75-96F3-49AC-9DFD-98ABFD395213} = {D658872D-810A-407E-AAF3-F53CD2A06E5B}
+		{EAB5552F-1296-460A-B602-41A105568656} = {D658872D-810A-407E-AAF3-F53CD2A06E5B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5CCDAB62-A756-4E98-B1EB-006DB761E0BA}

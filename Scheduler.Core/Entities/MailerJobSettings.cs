@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Scheduler.Impl.MailerJob
+namespace Scheduler.App.Entities
 {
     public class MailerJobSettings
     {
